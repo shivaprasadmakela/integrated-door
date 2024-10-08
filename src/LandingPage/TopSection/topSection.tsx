@@ -55,7 +55,7 @@ function MainWebsite() {
           <div className="callButton"></div>
         </div>
         
-        <div className="valuesCOntainer">
+        <div className="valuesContainer">
             <div className="value">
                 <h1 className="valueNumber">10 <span className="valueSpan">+</span></h1>
                 <p className="valueText">Years of Experience</p>
