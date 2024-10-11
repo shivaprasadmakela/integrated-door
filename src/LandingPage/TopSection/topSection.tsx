@@ -46,16 +46,16 @@ function MainWebsite() {
         />
         <div className="mainTextContainer">
          
-        <h5>QUALITY IS ALWAYS OUR PRIORITY</h5>
-        <span>
-        <h1>INTEGRATED</h1>
-        <h1 className="secondText">DOOR</h1>
+        <h5 className="mainText">QUALITY IS ALWAYS OUR PRIORITY</h5>
+        <span className="spanEle">
+        <h1 className="mainTitleText">INTEGRATED</h1>
+        <h1 className="mainTitleText secondText">DOOR</h1>
         </span>
           </div>
           <div className="callButton"></div>
         </div>
         
-        <div className="valuesCOntainer">
+        <div className="valuesContainer">
             <div className="value">
                 <h1 className="valueNumber">10 <span className="valueSpan">+</span></h1>
                 <p className="valueText">Years of Experience</p>

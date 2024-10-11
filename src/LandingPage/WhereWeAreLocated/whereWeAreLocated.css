@@ -1,0 +1,81 @@
+.mainTextHeading {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 4.5px;
+    text-align: center;
+    color: black;
+}
+
+.mainTextSpan {
+    color: #25B0CE;
+}
+
+.mainIframeSection{
+    width: 50%;
+    width: 829px;
+height: 525px;
+gap: 0px;
+border-radius: 20px 20px 20px 20px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+margin-top: 60px;
+padding: 12px 15px 15px 15px;
+border: 1px solid #00000026;
+}
+   
+.iframeContainer{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.nearbyLocationHeading{
+    color: black;
+}
+.mainSectionContainer{
+
+    display: flex;
+    flex-direction: row;
+    padding:0px 50px 50px 50px;
+}
+.nearbyLocations{
+    padding-top: 30px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.nearbyLocationButton{
+    width: 310px;
+height: 46px;
+top: 278px;
+left: 1005px;
+gap: 0px;
+border-radius: 6px 6px 6px 6px;
+gap:10px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+cursor: pointer;
+border: 1px solid #F09C31;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.nearbyLocationButton:hover{
+    background-color: #F09C3126;
+    
+}
+
+.nearbyLocationHeading{
+    font-family: Inter;
+    font-size: 18px;
+}
+.nearbyLocationTime{
+    font-family: Inter;
+font-size: 15px;
+}
