@@ -31,7 +31,12 @@ const TabSection = () => {
             />
           </div>
           <div className="tabTextContainer">
-            <h1>Phase One Delivered</h1>
+            <h1 className="tabMainText">Delivering High <br/> <span className="spanText">Quality Projects</span></h1>
+            <h5 className="tabSubText">Lorem ipsum proin gravida nibh vel velit auctor aliollici tudin sed odio sit amet nibh vulputate</h5>
+            <p>Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin, lorem quis
+bibendum auctor nisi elit consequat ipsum, nec sagittis. Morbi accumsan
+ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+mauris vitae erat consequat auctor.</p>
           </div>
         </div>
       ),
@@ -70,6 +75,7 @@ const TabSection = () => {
 
   return (
     <div className="tabs">
+        
       <div>
         {/* Tab Buttons */}
         <TabButtons

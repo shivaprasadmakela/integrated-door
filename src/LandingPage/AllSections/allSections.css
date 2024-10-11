@@ -1,0 +1,12 @@
+.mainTextHeading{
+    font-family: Old Standard TT;
+font-size: 60px;
+font-weight: 400;
+line-height: 64.02px;
+text-align: center;
+color: black;
+}
+
+.mainTextSpan{
+    color: #25B0CE;
+}

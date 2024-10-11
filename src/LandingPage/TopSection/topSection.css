@@ -78,17 +78,16 @@ li {
     padding-left: 50px;
 }
 
-h5 {
+.mainText {
     font-family: Inter;
     font-size: 22px;
     font-weight: 500;
     line-height: 14px;
     letter-spacing: 4.5px;
     color: #FFFFFF;
-    padding-bottom: 45px;
 }
 
-h1 {
+.mainTitleText{
     font-family: Old Standard TT;
     font-size: 70px;
     font-weight: 700;
@@ -98,10 +97,10 @@ h1 {
     color: #FFFFFF;
 }
 
-span {
+.spanEle {
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
 }
 
 .secondText {
