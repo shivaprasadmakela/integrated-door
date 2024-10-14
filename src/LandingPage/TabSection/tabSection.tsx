@@ -12,20 +12,28 @@ interface TabButtonsProps {
   activeTab: string;
 }
 
+
+
 const TabSection = () => {
+  const [isToggled, setIsToggled] = useState(false);
+
+const handleToggle = () => {
+  setIsToggled(!isToggled);
+}; 
+
   const tabs: TabProps[] = [
     {
       label: "PHASE ONE DELIVERED",
       children: (
         <div className="tabContent1">
-          <div className="tabImagesContainer">
+          <div className="tabImagesContainer" onClick={handleToggle}>
             <img
-              className="tabImage"
+               className={`tabImage ${isToggled ? 'tabImageActive' : ''}`}
               alt="tabimage1"
               src={process.env.PUBLIC_URL + "Asserts/tabimage1.svg"}
             />
             <img
-              className="tabImage2"
+              className={`tabImage2 ${isToggled ? 'tabImage2Active' : ''}`}
               alt="tabimage2"
               src={process.env.PUBLIC_URL + "Asserts/tabimage2.svg"}
             />

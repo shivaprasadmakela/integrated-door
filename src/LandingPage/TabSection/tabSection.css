@@ -1,14 +1,12 @@
 .tabs {
-    font-family: arial;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 25px;
+  font-family: arial;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 25px;
 }
 
-
 .tab-buttons {
-    margin-bottom: 50px;
-
+  margin-bottom: 50px;
 }
 
 .tabButton {
@@ -23,97 +21,90 @@
     color: rgba(0, 0, 0, .4);
     transition: all ease-in-out .2s;
     border-bottom: 2px solid transparent;
-
 }
 
 .active {
-    border-bottom: 2px solid #42b3f4;
+  border-bottom: 2px solid #42b3f4;
 
-    color: black;
+  color: black;
 }
 
 .tabContent1 {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .tabImage {
-    width: 400px;
-    height: 400px;
-    gap: 0px;
-    border-radius: 6px 0px 0px 0px;
-    opacity: 0px;
-
+  width: 400px;
+  height: 400px;
+  gap: 0px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
 }
 
 .tabImage2 {
-    position: absolute;
-    left: 350px;
-    top:90px;
-    width: 400px;
-    height: 400px;
-    gap: 0px;
-    border-radius: 6px 0px 0px 0px;
-    opacity: 0px;
-
+  position: absolute;
+  left: 350px;
+  top: 90px;
+  width: 400px;
+  height: 400px;
+  gap: 0px;
+  border-radius: 6px 0px 0px 0px;
+  opacity: 0px;
 }
 
 .tabTextContainer {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 100px;
-    padding-top: 100px;
-    gap:20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  padding-top: 100px;
+  gap: 20px;
 }
 
 .tabImagesContainer {
-    width: 50%;
+  width: 50%;
 }
 
 .spanText {
-    color: #25B0CE;
-    font-weight: 500;
+  color: #25b0ce;
+  font-weight: 500;
 }
 
 .tabMainText {
-    font-family: Old Standard TT;
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 64.02px;
-    text-align: left;
-    color: black;
+  font-family: Old Standard TT;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 64.02px;
+  text-align: left;
+  color: black;
 }
-.tabSubText{
-    font-family: Inter;
-font-size: 20px;
-font-weight: 400;
-line-height: 32px;
-text-align: left;
-color: black;
-width: 548.17px;
-
+.tabSubText {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: left;
+  color: black;
+  width: 548.17px;
 }
-.tabParagraph{
-    font-family: Open Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 30px;
-text-align: left;
-color: black;
-width: 548.17px;
-}
-
-.tab-content{
-    height: 550px;
+.tabParagraph {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  color: black;
+  width: 548.17px;
 }
 
-
+.tab-content {
+  height: 550px;
+}
 
 .tabImagesContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    perspective: 1000px; /* Ensures the 3D effect is visible */
-  }
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  perspective: 1000px; /* Ensures the 3D effect is visible */
+}

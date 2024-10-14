@@ -2,6 +2,8 @@ import React from "react";
 import TopSection from "../TopSection/topSection";
 import TabSection from "../TabSection/tabSection";
 import OurGallery from "../OurGallery/ourGallery";
+import CustomerReview from "../CustomerReviews/customerreviews";
+import FooterSection from "../Footer/footerSection";
 
 function AllSections() {
   return (
@@ -9,7 +11,8 @@ function AllSections() {
       <TopSection />
       <OurGallery />
       <TabSection />
-
+      <CustomerReview />
+      <FooterSection />
     </React.Fragment>
   );
 }
