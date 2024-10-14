@@ -1,4 +1,4 @@
-import React from "react";
+import TopCards from './topCards'
 import "./topSection.css";
 
 function MainWebsite() {
@@ -8,7 +8,7 @@ function MainWebsite() {
         <img
           className="mainlogo"
           alt="logo"
-          src={process.env.PUBLIC_URL + "Asserts/dummy-logo-3.png"}
+          src={process.env.PUBLIC_URL + "Asserts/logooo.png"}
         />
         <ul className="navLinks">
           <li>
@@ -32,48 +32,23 @@ function MainWebsite() {
             </a>
           </li>
         </ul>
-        <img
-          className="filterImage"
-          alt="filter"
-          src={process.env.PUBLIC_URL + "Asserts/filter_icon.png.svg"}
-        />
       </nav>
-      <div>
-        <img
-          className="mainDoor"
-          src={process.env.PUBLIC_URL + "Asserts/maindoor.jpg"}
-          alt="main door"
-        />
-        <div className="mainTextContainer">
-         
-        <h5 className="mainText">QUALITY IS ALWAYS OUR PRIORITY</h5>
-        <span className="spanEle">
-        <h1 className="mainTitleText">INTEGRATED</h1>
-        <h1 className="mainTitleText secondText">DOOR</h1>
-        </span>
+      <div className="mainTopContainer">
+        <div className="textContainer">
+          <h1 className="topHeading">INTEGRATED DOOR</h1>
+          <p className="topPara">
+            Integrated Door offers innovative door systems that combine
+            security, durability, and design. Aesthetically pleasing entryways .
+          </p>
+          <div>
+            <button className="topbtn1">Get in touch</button>
+            <button className="topbtn1 topbtn2">Watch Video</button>
           </div>
-          <div className="callButton"></div>
         </div>
+
+        <TopCards />
         
-        <div className="valuesContainer">
-            <div className="value">
-                <h1 className="valueNumber">10 <span className="valueSpan">+</span></h1>
-                <p className="valueText">Years of Experience</p>
-            </div>
-            <div className="value">
-                <h1 className="valueNumber">73 <span className="valueSpan">%</span></h1>
-                <p className="valueText">Open Space</p>
-            </div>
-            <div className="value">
-                <h1 className="valueNumber">50 <span className="valueSpan">+</span></h1>
-                <p className="valueText">Good Amenities</p>
-            </div>
-            <div className="value">
-                <h1 className="valueNumber">2.1 <span className="valueSpan">x</span></h1>
-                <p className="valueText">Investement Return</p>
-            </div>
-        </div>
-      
+      </div>
     </>
   );
 }

@@ -2,7 +2,6 @@ import React from "react";
 import TopSection from "../TopSection/topSection";
 import TabSection from "../TabSection/tabSection";
 import OurGallery from "../OurGallery/ourGallery";
-import WhereWeAreLocated from "../WhereWeAreLocated/whereWeAreLocated";
 import CustomerReview from "../CustomerReviews/customerreviews";
 import FooterSection from "../Footer/footerSection";
 
@@ -12,7 +11,6 @@ function AllSections() {
       <TopSection />
       <OurGallery />
       <TabSection />
-      <WhereWeAreLocated />
       <CustomerReview />
       <FooterSection />
     </React.Fragment>
