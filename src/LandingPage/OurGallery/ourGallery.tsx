@@ -12,6 +12,7 @@ interface CardProps {
 interface CarouselCard {
   key: string; 
   content: JSX.Element; 
+  title: string;
 }
 
 interface CarrousselProps {
@@ -46,7 +47,8 @@ function Carroussel(props: CarrousselProps) {
     <div
       style={{ width: props.width, height: props.height,overflow: props.overflow, margin: props.margin }}
     >
-    <h1 className="mainTextHeading">Our  <span className="mainTextHeading mainTextSpan">Gallery</span></h1>
+    <h1 className="mainTextHeading">WHAT ARE YOU
+    <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span></h1>
       <Carousel
         slides={cards}
         goToSlide={goToSlide !== null ? goToSlide : undefined}
@@ -59,7 +61,7 @@ function Carroussel(props: CarrousselProps) {
 }
 
 function Button({ text }: { text: string }) {
-  return <button className={Styles.btn}>{text}</button>;
+  return <button className="topbtn1">{text}</button>;
 }
 
 function Card({ imagen }: CardProps) {
@@ -88,8 +90,8 @@ function Card({ imagen }: CardProps) {
         volutpat.
       </p>
       <div className={Styles.btnn}>
-        <Button text="Demo" />
-        <Button text="Code" />
+        <Button text="View More"  />
+        
       </div>
     </animated.div>
   );
@@ -99,30 +101,35 @@ function OurGallery() {
   const cards: CarouselCard[] = [
     {
       key: uuidv4(),
+      title:"Cut Paste Laminate Doors",
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
       )
     },
     {
       key: uuidv4(),
+      title:"Frames",
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
       )
     },
     {
       key: uuidv4(),
+      title:"Prime Coated Doors",
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
       )
     },
     {
       key: uuidv4(),
+      title:"Take Doors",
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
       )
     },
     {
       key: uuidv4(),
+      title:"Venner Doors",
       content: (
         <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
       )
@@ -134,7 +141,7 @@ function OurGallery() {
       <div>
         <Carroussel
           cards={cards}
-          height="90vh"
+          height="95vh"
           width="95vw"
           overflow="hidden"
           margin="0 auto"
@@ -142,6 +149,8 @@ function OurGallery() {
           showArrows={false}
         />
       </div>
+      <div className="straightLine"></div>
+
     </div>
   );
 }

@@ -1,0 +1,86 @@
+.mainDivContainer{
+    height: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cardOne{
+    height: 24rem;
+    width: 19.5rem;
+    
+}
+
+.cardThree{
+    height: 24rem;
+    width: 19.5rem;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+}
+.iconContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1000rem;
+    padding-top: 4px;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 3px 3px -1px rgba(8, 11, 14, 0.1);
+    border: 1px solid #F7F8F9;
+    background-color: #ffffff;
+}
+.svg{
+    height: 25px;
+    
+}
+.profileSection{
+    background-color: #FFFFFF;
+    height: 19.5rem;
+    width: 19.5rem;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    margin-top: 2rem;
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+}
+
+.cardTwo{
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    width: 19.5rem;
+    align-items: center;
+
+}
+.cardTwoTopContainer{
+    background-color: #FFFFFF;
+    height: 17.5rem;
+    width: 17rem;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+}
+
+.cardTwoBottomContainer{
+    background-color: #FFFFFF;
+    height: 4.5rem;
+    width: 17rem;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+    margin-top: 1.9rem;
+}
+
+.straightLine{
+    border: 1px solid #F1F2F4;
+    height: 0.3px;
+    width: 80%;
+    background-color: #F1F2F4;
+    margin-left: 10rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}

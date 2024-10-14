@@ -31,12 +31,21 @@ const TabSection = () => {
             />
           </div>
           <div className="tabTextContainer">
-            <h1 className="tabMainText">Delivering High <br/> <span className="spanText">Quality Projects</span></h1>
-            <h5 className="tabSubText">Lorem ipsum proin gravida nibh vel velit auctor aliollici tudin sed odio sit amet nibh vulputate</h5>
-            <p>Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin, lorem quis
-bibendum auctor nisi elit consequat ipsum, nec sagittis. Morbi accumsan
-ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
-mauris vitae erat consequat auctor.</p>
+            <h1 className="tabMainText">
+              Delivering High <br />{" "}
+              <span className="spanText">Quality Projects</span>
+            </h1>
+            <h5 className="tabSubText">
+              Lorem ipsum proin gravida nibh vel velit auctor aliollici tudin
+              sed odio sit amet nibh vulputate
+            </h5>
+            <p>
+              Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin,
+              lorem quis bibendum auctor nisi elit consequat ipsum, nec
+              sagittis. Morbi accumsan ipsum velit. Nam nec tellus a odio
+              tincidunt auctor a ornare odio. Sed non mauris vitae erat
+              consequat auctor.
+            </p>
           </div>
         </div>
       ),
@@ -45,11 +54,7 @@ mauris vitae erat consequat auctor.</p>
       label: "PHOTOS",
       children: (
         <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2E3SrDqYWF9J_TDWNzjZkwJOAGxkLJVZPvUly7SqUL9WqLqEw"
-            alt="Tab 2"
-          />
-          <p>Tab 2 content</p>
+          <p>Coming Soon</p>
         </div>
       ),
     },
@@ -57,11 +62,7 @@ mauris vitae erat consequat auctor.</p>
       label: "OUR WORK",
       children: (
         <div>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB7Y713wstirF-PvKJa6OioS83ozc-BeFAzjjyndv58ZnfyaZK0g"
-            alt="Tab 3"
-          />
-          <p>Tab 3 content</p>
+          <p>Coming Soon</p>
         </div>
       ),
     },
@@ -75,7 +76,6 @@ mauris vitae erat consequat auctor.</p>
 
   return (
     <div className="tabs">
-        
       <div>
         {/* Tab Buttons */}
         <TabButtons
@@ -88,6 +88,7 @@ mauris vitae erat consequat auctor.</p>
           {tabs.find((tab) => tab.label === activeTab)?.children}
         </div>
       </div>
+      <div className="straightLine"></div>
     </div>
   );
 };
@@ -98,17 +99,20 @@ const TabButtons: React.FC<TabButtonsProps> = ({
   activeTab,
 }) => {
   return (
+    <>
     <div className="tab-buttons">
       {buttons.map((button) => (
         <button
           key={button}
-          className={button === activeTab ? "active" : ""}
+          className={button === activeTab ? "tabButton active" : "tabButton"}
           onClick={() => changeTab(button)}
         >
           {button}
         </button>
       ))}
     </div>
+
+    </>
   );
 };
 
