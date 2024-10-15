@@ -36,9 +36,7 @@
 .tabImage {
   width: 400px;
   height: 400px;
-  gap: 0px;
   border-radius: 10px 10px 10px 10px;
-  opacity: 0px;
 }
 
 .tabImage2 {
@@ -47,9 +45,7 @@
   top: 90px;
   width: 400px;
   height: 400px;
-  gap: 0px;
   border-radius: 10px 10px 10px 10px;
-  opacity: 0px;
 }
 
 .tabTextContainer {

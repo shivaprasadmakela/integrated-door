@@ -6,9 +6,9 @@ function MainWebsite() {
     <>
       <nav className="navBar">
         <img
-          className="mainlogo"
+          className="mainlogoCompant"
           alt="logo"
-          src={process.env.PUBLIC_URL + "Asserts/bad786dfe4f227555be6fa2484b0b9a3.webp"}
+          src={process.env.PUBLIC_URL + "Asserts/svgLogo.svg"}
         />
         <ul className="navLinks">
           <li>
