@@ -47,7 +47,6 @@ li {
 }
 
 .links {
-    font-family: SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
@@ -64,7 +63,6 @@ li {
 }
 
 .linksButton{
-    font-family: SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
     background-color: #F1F2F4;
     width: 8.5rem;
     height: 2.5rem;
@@ -92,7 +90,6 @@ li {
 }
 
 .topHeading {
-    font-family: SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
@@ -108,7 +105,6 @@ li {
     color: #505256;
     margin-bottom: 2.3rem;
     line-height: 30px;
-    font-size: SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji;
 }
 
 .topbtn1{
