@@ -29,11 +29,10 @@ li {
     
 }
 
-.mainlogo {
-    height: 45.81px;
+.mainlogoCompant {
+    height: 50.81px;
     padding-top: 10px;
-    gap: 0px;
-    opacity: 0px;
+   
 }
 
 .filterImage {
