@@ -11,47 +11,58 @@ function FooterSection() {
       sectionName: "Company",
       values: [
         "About Us",
-        "Careers",
-        "For Partners",
         "Terms",
         "Privacy Policy",
-        "Contact Us",
       ],
     },
     {
       sectionName: "Support",
       values: [
-        "About Us",
         "Careers",
         "For Partners",
-        "Terms",
-        "Privacy Policy",
+        "Contact Us",
       ],
     },
     {
-      sectionName: "Explore",
-      values: ["News", "Home Loans", "Sitemaps"],
+      sectionName: "Our Address",
+      values: ["Name : Dummy", "Contact : 9098000000 ", "Email: dummy.com", "Address : dummy"],
     },
   ];
 
   return (
-    <div className="FooterMain">
-      <div className="FooterMain1">
+    <>
+    <div className="straightLine"></div>
+    <div className="footerMain">
+      
+      <div className="footerMainOne">
         <div className="leftSection">
           <img
             className="mainlogo"
             alt="logo"
-            src={process.env.PUBLIC_URL + "Asserts/dummy-logo-3.png"}
+            src={process.env.PUBLIC_URL + "Asserts/logooo.png"}
           />
-          <span className="lefth1">Subscribe to our Newsteller</span>
-          <span className="lefth2">
-            Be The First To Know About Our New Launches,Updates And More
-          </span>
-          <div className="subscribeGrid">
-          <input className="textbox" placeholder="Enter your email"></input>
-          <button className="subscribeButton">Subscribe</button>
+          <div className="rightLastGrid">
+            <img
+              className="smlogo"
+              alt="logo"
+              src={process.env.PUBLIC_URL + "Asserts/fb.svg"}
+            />
+            <img
+              className="smlogo"
+              alt="logo"
+              src={process.env.PUBLIC_URL + "Asserts/insta.svg"}
+            />
+            <img
+              className="smlogo"
+              alt="logo"
+              src={process.env.PUBLIC_URL + "Asserts/twitter.svg"}
+            />
+            <img
+              className="smlogo"
+              alt="logo"
+              src={process.env.PUBLIC_URL + "Asserts/pintrest.svg"}
+            />
           </div>
-
         </div>
         <div className="rightSection">
           {footerSections.map((section, index) => (
@@ -70,30 +81,9 @@ function FooterSection() {
         <span className="leftLastText">
           © 2024 Fincity property, All Rights Reserved
         </span>
-        <div className="rightLastGrid">
-          <img
-            className="smlogo"
-            alt="logo"
-            src={process.env.PUBLIC_URL + "Asserts/fb.svg"}
-          />
-          <img
-            className="smlogo"
-            alt="logo"
-            src={process.env.PUBLIC_URL + "Asserts/insta.svg"}
-          />
-          <img
-            className="smlogo"
-            alt="logo"
-            src={process.env.PUBLIC_URL + "Asserts/twitter.svg"}
-          />
-          <img
-            className="smlogo"
-            alt="logo"
-            src={process.env.PUBLIC_URL + "Asserts/pintrest.svg"}
-          />
-        </div>
       </div>
     </div>
+    </>
   );
 }
 

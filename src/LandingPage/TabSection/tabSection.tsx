@@ -12,14 +12,12 @@ interface TabButtonsProps {
   activeTab: string;
 }
 
-
-
 const TabSection = () => {
   const [isToggled, setIsToggled] = useState(false);
 
-const handleToggle = () => {
-  setIsToggled(!isToggled);
-}; 
+  const handleToggle = () => {
+    setIsToggled(!isToggled);
+  };
 
   const tabs: TabProps[] = [
     {
@@ -28,31 +26,29 @@ const handleToggle = () => {
         <div className="tabContent1">
           <div className="tabImagesContainer" onClick={handleToggle}>
             <img
-               className={`tabImage ${isToggled ? 'tabImageActive' : ''}`}
+              className={`tabImage ${isToggled ? "tabImageActive" : ""}`}
               alt="tabimage1"
-              src={process.env.PUBLIC_URL + "Asserts/tabimage1.svg"}
+              src={process.env.PUBLIC_URL + "Asserts/syntegra-integrated-door.jpg"}
             />
             <img
-              className={`tabImage2 ${isToggled ? 'tabImage2Active' : ''}`}
+              className={`tabImage2 ${isToggled ? "tabImage2Active" : ""}`}
               alt="tabimage2"
-              src={process.env.PUBLIC_URL + "Asserts/tabimage2.svg"}
+              src={process.env.PUBLIC_URL + "Asserts/google-area-separation-doors-1.jpg"}
             />
           </div>
           <div className="tabTextContainer">
             <h1 className="tabMainText">
               Delivering High <br />{" "}
-              <span className="spanText">Quality Projects</span>
+              <span className="mainTextSpan">Quality Projects</span>
             </h1>
             <h5 className="tabSubText">
               Lorem ipsum proin gravida nibh vel velit auctor aliollici tudin
               sed odio sit amet nibh vulputate
             </h5>
-            <p>
+            <p className="tabSubText t">
               Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin,
               lorem quis bibendum auctor nisi elit consequat ipsum, nec
-              sagittis. Morbi accumsan ipsum velit. Nam nec tellus a odio
-              tincidunt auctor a ornare odio. Sed non mauris vitae erat
-              consequat auctor.
+              sagittis. Morbi accumsan ipsum velit. 
             </p>
           </div>
         </div>
@@ -108,18 +104,17 @@ const TabButtons: React.FC<TabButtonsProps> = ({
 }) => {
   return (
     <>
-    <div className="tab-buttons">
-      {buttons.map((button) => (
-        <button
-          key={button}
-          className={button === activeTab ? "tabButton active" : "tabButton"}
-          onClick={() => changeTab(button)}
-        >
-          {button}
-        </button>
-      ))}
-    </div>
-
+      <div className="tab-buttons">
+        {buttons.map((button) => (
+          <button
+            key={button}
+            className={button === activeTab ? "tabButton active" : "tabButton"}
+            onClick={() => changeTab(button)}
+          >
+            {button}
+          </button>
+        ))}
+      </div>
     </>
   );
 };

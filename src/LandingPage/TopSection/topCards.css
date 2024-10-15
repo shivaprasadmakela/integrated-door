@@ -19,6 +19,9 @@
     box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
     border-radius: 12px;
     border: 1px solid #F7F8F9;
+    padding-top: 20px;
+    
+    
 }
 .iconContainer{
     display: flex;
@@ -40,10 +43,11 @@
 }
 .profileSection{
     background-color: #FFFFFF;
-    height: 19.5rem;
+    height: 20.5rem;
     width: 19.5rem;
+    padding-top: 10px;
     box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 12px;
     border: 1px solid #F7F8F9;
 }
@@ -54,25 +58,27 @@
     height: 24rem;
     width: 19.5rem;
     align-items: center;
+    
 
 }
 .cardTwoTopContainer{
     background-color: #FFFFFF;
-    height: 17.5rem;
+    height: 24rem;
     width: 17rem;
     box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
     border-radius: 12px;
     border: 1px solid #F7F8F9;
+    padding: 20px 20px 0px 20px;
 }
 
 .cardTwoBottomContainer{
     background-color: #FFFFFF;
-    height: 4.5rem;
+    height: 5.5rem;
     width: 17rem;
     box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
     border-radius: 12px;
     border: 1px solid #F7F8F9;
-    margin-top: 1.9rem;
+    margin-top: 1rem;
 }
 
 .straightLine{
@@ -84,3 +90,57 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.vertical-text {
+   
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    left: 110px;
+    top:550px;
+    
+  }
+  
+  .whoText{
+    font-size: 38px;
+    padding-bottom: 30px;
+  }
+  
+  .cardTwoHeader{
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom:15px;
+  }
+  
+  .cardTwoPara{
+    font-size: 13px;
+    padding-bottom:15px;
+    line-height: 25px;
+  }
+
+  .cardTwoHeader > span{
+    color: #0094ff;
+  }
+  .we{
+    font-size: 20px;
+    
+  }
+  .seeMorePara{
+    
+    margin: 0;
+    padding: 0;
+    color: #0284FE;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    align-self: end;
+  }
+
+  .cardTwoIframe{
+    height: 5.5rem;
+    width: 17rem;
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+  }

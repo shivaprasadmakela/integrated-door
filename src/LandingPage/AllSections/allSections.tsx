@@ -4,6 +4,7 @@ import TabSection from "../TabSection/tabSection";
 import OurGallery from "../OurGallery/ourGallery";
 import CustomerReview from "../CustomerReviews/customerreviews";
 import FooterSection from "../Footer/footerSection";
+import WhyYouShould from "../WhyYouShould/whyYouShould"
 
 function AllSections() {
   return (
@@ -11,6 +12,7 @@ function AllSections() {
       <TopSection />
       <OurGallery />
       <TabSection />
+      <WhyYouShould />
       <CustomerReview />
       <FooterSection />
     </React.Fragment>

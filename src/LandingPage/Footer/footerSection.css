@@ -1,51 +1,42 @@
-.FooterMain1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 80px;
-  background-color: black;
-  position: relative;
-  top: 120px;
-  padding-top: 60px;
-  padding-bottom: 100px;
+.footerMain{
+  height: 500px;
+  padding-top: 50px;
 }
-
-.FooterMain {
+.footerMainOne{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .rightSection {
   width: 50%;
   display: flex;
   flex-direction: row;
-  gap: 100px;
+  gap: 130px;
   justify-content: flex-end;
 }
 
 .eachSection {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 .sectionheader {
-  font-family: Old Standard TT;
   font-size: 24px;
   font-weight: 700;
   line-height: 34px;
   text-align: left;
-  color: #ffffff;
+  color: #000000;
 }
 
 .values {
-  font-family: Inter;
+ 
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 14px;
   text-align: center;
-  color: #868686;
+  color: #505256;
 }
 
 .leftSection {
@@ -55,7 +46,7 @@
 }
 
 .lefth1 {
-  font-family: Old Standard TT;
+  
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
@@ -67,66 +58,58 @@
 }
 
 .lefth2 {
-  font-family: Inter;
+  
+  text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
   text-align: left;
-  color: #ffffff4d;
+  color: #505256;
   width: 318px;
   padding-bottom: 30px;
 }
 
-.textbox {
-  width: 197px;
-  height: 41px;
-  background-color: #000000;
-  border: 1px solid #ffffff;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  color: #ffffff;
-  padding: 12px;
-}
 
 .lastSection {
   border-top: 1px solid #ffffff33;
   width: 100%;
   height: 57px;
   position: relative;
-  top: 50px;
+  top: 140px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 80px;
   padding-right: 80px;
   align-items: center;
 }
 
 .leftLastText {
-  font-family: Open Sans;
+  text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: left;
-  color: #ffffff;
+  color: #000000;
 }
 
 .rightLastGrid {
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 15px;
 }
 
-.subscribeGrid {
-  display: flex;
+
+
+.smlogo{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #000000;
+  margin-top: 50px;
+  padding: 2px;
 }
-.subscribeButton {
-  color: #ffffff;
-  background-color: #f09c31;
-  position: relative;
-  left: -24px;
-  height: 41px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border: 1px solid #ffffff;
+.mainlogo{
+  height: 60px;
+  
 }
