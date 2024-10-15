@@ -1,9 +1,27 @@
+import Carousel from './carousel';
+// import ExampleCarouselImage from 'components/ExampleCarouselImage';
 import "./topCards.css";
+import Iframe from 'react-iframe'
+
 
 interface SvgImage {
   fill: string;
   d: string;
 }
+
+const profileImage =[
+  "Asserts/bad786dfe4f227555be6fa2484b0b9a3.webp",
+  "Asserts/collection-hand-drawn-profile-icons_1323905-5.webp",
+  "Asserts/il_794xN.3120127459_kz1z.jpg"
+]
+
+const images = [
+  "Asserts/cutpaste laminate door .webp",
+  "Asserts/teakwood door_edited.webp",
+  "Asserts/prime coated door.webp",
+  "Asserts/Frames.webp"
+  
+];
 
 const svgImages: SvgImage[] = [
   {
@@ -35,32 +53,57 @@ const svgImages: SvgImage[] = [
 function TopCards() {
   return (
     <>
-    <div className="mainDivContainer">
-      <div className="cardOne">
-        <div className="iconContainer">
-          {svgImages.map(({ fill, d }, index) => (
-            <button className="icon" key={index}>
-              <svg viewBox="0 0 24 24" className="svg">
-                <path fill={fill} fillRule="evenodd" d={d}></path>
-              </svg>
-            </button>
-          ))}
-        </div>
-        <div className="profileSection">
-
-        </div>
+      <div className="vertical-text">
+        <h1 className="whoText">WHO</h1>
+        <h1 className="whoText">WE</h1>
+        <h1 className="whoText">ARE</h1>
       </div>
-      <div className="cardTwo">
-        <div className="cardTwoTopContainer">
-        </div>
-        <div className="cardTwoBottomContainer"></div>
-      </div>
-      <div className="cardThree"></div>
 
-    </div>
-    <div className="straightLine"></div>
+      <div className="mainDivContainer">
+        <div className="cardOne">
+          <div className="iconContainer">
+            {svgImages.map(({ fill, d }, index) => (
+              <button className="icon" key={index}>
+                <svg viewBox="0 0 24 24" className="svg">
+                  <path fill={fill} fillRule="evenodd" d={d}></path>
+                </svg>
+              </button>
+            ))}
+          </div>
+          <div className="profileSection">
+          <Carousel images={profileImage} />
+          <h1 className="mainTextHeading">
+        Our
+        <span className="mainTextHeading mainTextSpan"> Team</span>
+      </h1>
+          </div>
+        </div>
+        
+        <div className="cardThree">
+        <h1 className="mainTextHeading">
+        Our
+        <span className="mainTextHeading mainTextSpan"> Products</span>
+      </h1>
+      <div className='carouselGrid'>
+        <Carousel images={images} />
+        </div>
+        </div>
+        <div className="cardTwo">
+          <div className="cardTwoTopContainer">
+            
+            <h1 className='cardTwoHeader'> <span className='we'>We Are</span> Exceptional artistry for your <span>interiors </span></h1>
+            <p className="cardTwoPara">Home furnishing doors with premium quality materials sourced from all over the world.</p>
+          
+            <a href="/see" className='seeMorePara'><p className="seeMorePara">See More</p></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div className="straightLine"></div>
     </>
   );
 }
+
 
 export default TopCards;

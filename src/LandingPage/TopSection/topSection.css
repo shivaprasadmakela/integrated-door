@@ -88,7 +88,7 @@ li {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 23vw;
+   height: 20vw;
 }
 
 .topHeading {
@@ -128,4 +128,7 @@ li {
     color: #505256;
     border: 1px solid #E1E4E8;
 
+}
+.carouselGrid{
+    padding-top: 20px;
 }

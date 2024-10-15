@@ -1,5 +1,4 @@
 .reviewTitle {
-  font-family: Inter;
   font-size: 25px;
   font-weight: 500;
   line-height: 14px;
@@ -15,7 +14,7 @@
 .allReviewsgrid {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-right: 95px;
   padding-left: 95px;
   padding-top: 50px;
@@ -31,7 +30,6 @@
 }
 
 .eachreview {
-  height: 300px;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -50,11 +48,10 @@
   padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .customerName {
-  font-family: Inter;
   font-size: 18px;
   font-weight: 700;
   line-height: 21.78px;
@@ -63,10 +60,15 @@
 }
 
 .customerReview {
-  font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   text-align: center;
   color: #7b7b7b;
+}
+
+.customerReviewMain{
+  margin-top: 20px;
+  height: 600px;
+ 
 }

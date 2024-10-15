@@ -36,8 +36,9 @@ function CustomerReview() {
 
   return (
     <div className="customerReviewMain">
-      <h1 className="reviewTitle">
-        Here from our <span className="titleSpan">customers</span>
+      <h1 className="mainTextHeading">
+      Here from our
+        <span className="mainTextHeading mainTextSpan"> customers</span>
       </h1>
       <div className="allReviewsgrid">
         {customerReviews.map((review, index) => (

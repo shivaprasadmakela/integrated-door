@@ -2,34 +2,34 @@ import { v4 as uuidv4 } from "uuid";
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config, useSpring, animated } from "react-spring";
-import './ourGallery.css'
-import Styles from './card.module.css'
+import "./ourGallery.css";
+import Styles from "./card.module.css";
 
 interface CardProps {
-  imagen: string; 
-}
-
-interface CarouselCard {
-  key: string; 
-  content: JSX.Element; 
+  imagen: string;
   title: string;
 }
 
+interface CarouselCard {
+  key: string;
+  content: JSX.Element;
+}
+
 interface CarrousselProps {
-  cards: CarouselCard[]; 
-  offset: number; 
-  showArrows: boolean; 
-  width: string; 
-  height: string; 
-  margin: string; 
-  overflow: string
+  cards: CarouselCard[];
+  offset: number;
+  showArrows: boolean;
+  width: string;
+  height: string;
+  margin: string;
+  overflow: string;
 }
 
 function Carroussel(props: CarrousselProps) {
   const [cards, setCards] = useState<CarouselCard[]>([]);
   const [offsetRadius, setOffsetRadius] = useState<number>(2);
   const [showArrows, setShowArrows] = useState<boolean>(false);
-  const [goToSlide, setGoToSlide] = useState<number | null>(null); 
+  const [goToSlide, setGoToSlide] = useState<number | null>(null);
 
   useEffect(() => {
     const table = props.cards.map((element, index) => {
@@ -45,10 +45,17 @@ function Carroussel(props: CarrousselProps) {
 
   return (
     <div
-      style={{ width: props.width, height: props.height,overflow: props.overflow, margin: props.margin }}
+      style={{
+        width: props.width,
+        height: props.height,
+        overflow: props.overflow,
+        margin: props.margin,
+      }}
     >
-    <h1 className="mainTextHeading">WHAT ARE YOU
-    <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span></h1>
+      <h1 className="mainTextHeading">
+        WHAT ARE YOU
+        <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
+      </h1>
       <Carousel
         slides={cards}
         goToSlide={goToSlide !== null ? goToSlide : undefined}
@@ -64,7 +71,7 @@ function Button({ text }: { text: string }) {
   return <button className="topbtn1">{text}</button>;
 }
 
-function Card({ imagen }: CardProps) {
+function Card({ imagen, title }: CardProps) {
   const [show, setShown] = useState<boolean>(false);
 
   const props3 = useSpring({
@@ -72,7 +79,7 @@ function Card({ imagen }: CardProps) {
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: show
       ? "0 20px 25px rgb(0 0 0 / 25%)"
-      : "0 2px 10px rgb(0 0 0 / 8%)"
+      : "0 2px 10px rgb(0 0 0 / 8%)",
   });
 
   return (
@@ -83,15 +90,12 @@ function Card({ imagen }: CardProps) {
       onMouseLeave={() => setShown(false)}
     >
       <img src={imagen} alt="" />
-      <h2>Title</h2>
+      <h2>{title}</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit
       </p>
       <div className={Styles.btnn}>
-        <Button text="View More"  />
-        
+        <Button text="View More" />
       </div>
     </animated.div>
   );
@@ -101,39 +105,51 @@ function OurGallery() {
   const cards: CarouselCard[] = [
     {
       key: uuidv4(),
-      title:"Cut Paste Laminate Doors",
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/convertplus_thumbnail.jpg" />
-      )
+        <Card
+          imagen={process.env.PUBLIC_URL + "Asserts/cutpaste laminate door .webp"}
+          title="Cut Paste Laminate Doors"
+        />
+      ),
     },
     {
       key: uuidv4(),
-      title:"Frames",
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
-      )
+        <Card
+          imagen={process.env.PUBLIC_URL + "Asserts/Frames.webp"}
+          title="Frames"
+        />
+      ),
     },
     {
       key: uuidv4(),
-      title:"Prime Coated Doors",
+
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
-      )
+        <Card
+          imagen={process.env.PUBLIC_URL + "Asserts/prime coated door.webp"}
+          title="Prime Coated Doors"
+        />
+      ),
     },
     {
       key: uuidv4(),
-      title:"Take Doors",
+
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
-      )
+        <Card
+          imagen={process.env.PUBLIC_URL + "Asserts/teakwood door_edited.webp"}
+          title="Take Doors"
+        />
+      ),
     },
     {
       key: uuidv4(),
-      title:"Venner Doors",
       content: (
-        <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
-      )
-    }
+        <Card
+          imagen={process.env.PUBLIC_URL + "Asserts/veneer door.webp"}
+          title="Venner Doors"
+        />
+      ),
+    },
   ];
 
   return (
@@ -141,7 +157,7 @@ function OurGallery() {
       <div>
         <Carroussel
           cards={cards}
-          height="95vh"
+          height="85vh"
           width="95vw"
           overflow="hidden"
           margin="0 auto"
@@ -150,7 +166,6 @@ function OurGallery() {
         />
       </div>
       <div className="straightLine"></div>
-
     </div>
   );
 }

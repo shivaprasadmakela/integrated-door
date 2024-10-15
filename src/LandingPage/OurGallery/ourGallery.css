@@ -12,5 +12,9 @@
     width: 7.5rem;
   }
   .mainTextHeading{
-    padding-top: 40px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .mainTextSpan{
+    color: #0094ff;
   }
