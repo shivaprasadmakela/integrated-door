@@ -1,5 +1,4 @@
 .tabs {
-  font-family: arial;
   margin: 0 auto;
   text-align: center;
   padding-top: 25px;
@@ -72,7 +71,6 @@
 }
 
 .tabMainText {
-  font-family: Old Standard TT;
   font-size: 60px;
   font-weight: 500;
   line-height: 64.02px;
@@ -80,7 +78,6 @@
   color: black;
 }
 .tabSubText {
-  font-family: Inter;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
@@ -89,7 +86,6 @@
   width: 548.17px;
 }
 .tabParagraph {
-  font-family: Open Sans;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
