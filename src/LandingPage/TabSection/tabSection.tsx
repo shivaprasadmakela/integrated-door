@@ -28,12 +28,12 @@ const TabSection = () => {
             <img
               className={`tabImage ${isToggled ? "tabImageActive" : ""}`}
               alt="tabimage1"
-              src={process.env.PUBLIC_URL + "Asserts/syntegra-integrated-door.jpg"}
+              src={process.env.PUBLIC_URL + "/Asserts/syntegra-integrated-door.jpg"}
             />
             <img
               className={`tabImage2 ${isToggled ? "tabImage2Active" : ""}`}
               alt="tabimage2"
-              src={process.env.PUBLIC_URL + "Asserts/google-area-separation-doors-1.jpg"}
+              src={process.env.PUBLIC_URL + "/Asserts/google-area-separation-doors-1.jpg"}
             />
           </div>
           <div className="tabTextContainer">

@@ -8,7 +8,7 @@ function MainWebsite() {
         <img
           className="mainlogo"
           alt="logo"
-          src={process.env.PUBLIC_URL + "Asserts/svgLogo.svg"}
+          src={process.env.PUBLIC_URL + "/Asserts/svgLogo.svg"}
         />
         <ul className="navLinks">
           <li>
