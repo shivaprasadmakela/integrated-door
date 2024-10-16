@@ -1,7 +1,27 @@
-import TopCards from './topCards'
+import TopCards from "./topCards";
+import ContactForm from "./contactForm";
 import "./topSection.css";
 
 function MainWebsite() {
+  const keyHighlights = [
+    {
+      title: "15+",
+      description: "New Doors and Accessories",
+    },
+    {
+      title: "60+",
+      description: "Years of Experience",
+    },
+    {
+      title: "2.1X",
+      description: "Investment multiple",
+    },
+    {
+      title: "100%",
+      description: "Assurence Guarantee ",
+    },
+  ];
+
   return (
     <>
       <nav className="navBar">
@@ -34,20 +54,30 @@ function MainWebsite() {
         </ul>
       </nav>
       <div className="mainTopContainer">
+        <img
+          className="topMainImage"
+          src={process.env.PUBLIC_URL + "Asserts/Background.svg"}
+        />
         <div className="textContainer">
           <h1 className="topHeading">INTEGRATED DOOR</h1>
           <p className="topPara">
             Integrated Door offers innovative door systems that combine
             security, durability, and design. Aesthetically pleasing entryways .
           </p>
-          <div>
-            <button className="topbtn1">Get in touch</button>
-            <button className="topbtn1 topbtn2">Watch Video</button>
-          </div>
         </div>
 
-        <TopCards />
-        
+        <div className="formSection">
+          <h3 className="requestText">Request a callback</h3>
+          <ContactForm />
+        </div>
+      </div>
+      <div className="keyHighlights">
+        {keyHighlights.map((highlight, index) => (
+          <div className="keyHighlight" key={index}>
+            <h2 className="keyTitle">{highlight.title}</h2>
+            <p className="keyDescription">{highlight.description}</p>
+          </div> 
+        ))}
       </div>
     </>
   );
