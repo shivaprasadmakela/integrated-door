@@ -4,14 +4,20 @@
 
 .navBar {
     height: 70px;
+    width: 100%;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0px 200px 0px 200px;
+    position: fixed;
+    z-index: 6;
 }
 
+.toptop{
+    height: 70px;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -166,21 +172,21 @@ padding-bottom: 30px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 180px;
+    height: 200px;
     width: 100%;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 150px 0px 150px;
 }
 
 .keyTitle{
     font-size: 36px;
     font-weight: 700;
     line-height: 48px;
-    margin-bottom: 10px;
+    
 }
 
 .keyHighlight{
     text-align: center;
-    width: 120px;
+    width: 130px;
 }
 
 .keyDescription{
@@ -193,3 +199,4 @@ padding-bottom: 30px;
     text-decoration: none;
     padding-top: 15px;
 }
+

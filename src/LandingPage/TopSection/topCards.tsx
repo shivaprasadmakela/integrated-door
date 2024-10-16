@@ -53,13 +53,14 @@ const svgImages: SvgImage[] = [
 function TopCards() {
   return (
     <>
+      
+
+      <div className="mainDivContainer">
       <div className="vertical-text">
         <h1 className="whoText">WHO</h1>
         <h1 className="whoText">WE</h1>
         <h1 className="whoText">ARE</h1>
       </div>
-
-      <div className="mainDivContainer">
         <div className="cardOne">
           <div className="iconContainer">
             {svgImages.map(({ fill, d }, index) => (

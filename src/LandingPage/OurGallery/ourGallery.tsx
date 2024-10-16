@@ -56,6 +56,7 @@ function Carroussel(props: CarrousselProps) {
         WHAT ARE YOU
         <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
       </h1>
+      <div className="carouselContainer">
       <Carousel
         slides={cards}
         goToSlide={goToSlide !== null ? goToSlide : undefined}
@@ -63,6 +64,7 @@ function Carroussel(props: CarrousselProps) {
         showNavigation={showArrows}
         animationConfig={config.gentle}
       />
+      </div>
     </div>
   );
 }
@@ -76,6 +78,7 @@ function Card({ imagen, title }: CardProps) {
 
   const props3 = useSpring({
     opacity: 1,
+
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: show
       ? "0 20px 25px rgb(0 0 0 / 25%)"
@@ -152,18 +155,52 @@ function OurGallery() {
     },
   ];
 
+  const iconAimSection = [
+    {
+      image : "Asserts/building-elevator-doors-svgrepo-com.svg",
+      title: "Dummy Door Title",
+      description: "We have Doors and Accessories",
+    },
+    {
+      image : "Asserts/opened-outlined-door-svgrepo-com.svg",
+      title: "Dummy Door Title",
+      description: "We have Doors and Accessories",
+    },
+    {
+      image : "Asserts/open-exit-door-svgrepo-com.svg",
+      title: "Dummy Door Title",
+      description: "We have Doors and Accessories",
+    },
+    {
+      image : "Asserts/double-door-closed-svgrepo-com.svg",
+      title: "Dummy Door Title",
+      description: "We have Doors and Accessories",
+    },
+  ];
+
   return (
     <div>
       <div>
         <Carroussel
           cards={cards}
-          height="85vh"
+          height="92vh"
           width="95vw"
           overflow="hidden"
           margin="0 auto"
           offset={200}
           showArrows={false}
         />
+      </div>
+
+      <div className="iconAimSection">
+      {iconAimSection.map((highlight, index) => (
+          <div className="iconAimHighlight" key={index}>
+            <img src={process.env.PUBLIC_URL + highlight.image} className="iconAimImage"/>
+            
+            <h2 className="iconAimTitle">{highlight.title}</h2>
+            <p className="iconAimDescription">{highlight.description}</p>
+          </div> 
+        ))}
       </div>
       <div className="straightLine"></div>
     </div>
