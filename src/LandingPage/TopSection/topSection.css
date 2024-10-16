@@ -3,7 +3,7 @@
 
 
 .navBar {
-    height: 100px;
+    height: 70px;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
@@ -81,11 +81,11 @@ li {
 }
 
 .textContainer {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
+    position: absolute;
+    left: 9vw;
+    top: 23vw;
    height: 20vw;
+   
 }
 
 .topHeading {
@@ -95,13 +95,14 @@ li {
     letter-spacing: 4.5px;
     text-align: center;
     margin-bottom: 1.5rem;
+    color: #FFFFFF;
 }
 .topPara{
     width: 36rem;
     text-align: center;
     font-weight: 400px;
     font-size: 17px;
-    color: #505256;
+    color: #FFFFFF;
     margin-bottom: 2.3rem;
     line-height: 30px;
 }
@@ -126,4 +127,69 @@ li {
 }
 .carouselGrid{
     padding-top: 20px;
+}
+
+.mainTopContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.topMainImage{
+    width: 1410px;
+    height: 630.05px;
+    
+}
+
+.formSection{
+    width: 360px;
+height: 434px;
+padding: 30px;
+position: absolute;
+   left: 60vw;
+   top: 13vw;
+   background-color: #FFFFFFF2;
+   border: 1px solid #12A76B33;
+   border-radius: 10px;
+}
+
+.requestText{
+font-size: 24px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+padding-bottom: 30px;
+}
+
+.keyHighlights{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 180px;
+    width: 100%;
+    padding: 0px 20px 0px 20px;
+}
+
+.keyTitle{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+.keyHighlight{
+    text-align: center;
+    width: 120px;
+}
+
+.keyDescription{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #505256;
+    text-decoration: none;
+    padding-top: 15px;
 }
