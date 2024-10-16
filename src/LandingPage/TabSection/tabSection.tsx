@@ -1,5 +1,6 @@
 import React, { useState, ReactNode } from "react";
 import "./tabSection.css";
+import VideoCarousel from './videoCarousel'
 
 interface TabProps {
   label: string;
@@ -19,12 +20,18 @@ const TabSection = () => {
     setIsToggled(!isToggled);
   };
 
+  const videos = [
+    "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
+    "https://youtu.be/ZuQuOnYnr3Q?si=3XAPZGrHFz1sAher",
+    "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz"
+  ];
+
   const tabs: TabProps[] = [
     {
       label: "PHASE ONE DELIVERED",
       children: (
         <div className="tabContent1">
-          <div className="tabImagesContainer" onClick={handleToggle}>
+          {/* <div className="tabImagesContainer" onClick={handleToggle}>
             <img
               className={`tabImage ${isToggled ? "tabImageActive" : ""}`}
               alt="tabimage1"
@@ -35,6 +42,9 @@ const TabSection = () => {
               alt="tabimage2"
               src={process.env.PUBLIC_URL + "/Asserts/google-area-separation-doors-1.jpg"}
             />
+          </div> */} 
+          <div className="tabImagesContainer">
+          <VideoCarousel videos={videos} />
           </div>
           <div className="tabTextContainer">
             <h1 className="tabMainText">
@@ -78,9 +88,10 @@ const TabSection = () => {
     setActiveTab(tab);
   };
 
+
   return (
     <div className="tabs">
-      <div>
+      <div className="tabs-container">
         {/* Tab Buttons */}
         <TabButtons
           buttons={tabs.map((tab) => tab.label)}
@@ -93,6 +104,7 @@ const TabSection = () => {
         </div>
       </div>
       <div className="straightLine"></div>
+    
     </div>
   );
 };

@@ -3,6 +3,9 @@ import ContactForm from "./contactForm";
 import "./topSection.css";
 
 function MainWebsite() {
+
+  
+
   const keyHighlights = [
     {
       title: "15+",
@@ -53,6 +56,9 @@ function MainWebsite() {
           </li>
         </ul>
       </nav>
+      <div className="toptop">
+
+      </div>
       <div className="mainTopContainer">
         <img
           className="topMainImage"
@@ -79,6 +85,7 @@ function MainWebsite() {
           </div> 
         ))}
       </div>
+
     </>
   );
 }
