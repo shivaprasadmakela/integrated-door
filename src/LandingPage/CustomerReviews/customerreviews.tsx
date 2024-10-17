@@ -1,13 +1,13 @@
 import "./customerreview.css";
 
-interface CustomerReview {
+interface CustomerReviewData {
   customerName: string;
   review: string;
   profile: string;
 }
 
 function CustomerReview() {
-  const customerReviews: CustomerReview[] = [
+  const customerReviews: CustomerReviewData[] = [
     {
       customerName: "NATASHA",
       review:
@@ -43,7 +43,7 @@ function CustomerReview() {
       <div className="allReviewsgrid">
         {customerReviews.map((review, index) => (
           <div className="eachreview" key={index}>
-            <img className="customerProfile" src={process.env.PUBLIC_URL + review.profile}></img>
+            <img className="customerProfile" alt={"customerProfile" + index} src={process.env.PUBLIC_URL + review.profile}></img>
             <div className="reviewText">
               <p className="customerName">{review.customerName}</p>
               <p className="customerReview">{review.review}</p>

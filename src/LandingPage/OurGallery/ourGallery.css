@@ -44,3 +44,34 @@
     grid-template-columns: repeat(1 , 1fr);
     justify-items: center;
   }
+
+.ourGalaryBackImage{
+  position: absolute;
+  height: 800px;
+  width: 98%;
+  opacity: 0.1 ;
+}
+
+  /* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+
+  .iconAimSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0px 150px 0px 150px;
+  }
+  .iconAimHighlight{
+    
+    text-align: center;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(1 , 1fr);
+    justify-items: center;
+    padding-bottom: 25px;
+  }
+
+}

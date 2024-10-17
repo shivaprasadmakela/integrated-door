@@ -8,24 +8,49 @@ interface footerSections {
 function FooterSection() {
   const footerSections: footerSections[] = [
     {
+      sectionName: "Products",
+      values: [
+        "Our Products",
+        "Product Categories",
+        "Featured Products",
+        "Customer Reviews",
+      ],
+    },
+    {
+      sectionName: "Services",
+      values: [
+        "Service Overview",
+        "Support Services",
+        "Consultation Services",
+        "Client Testimonials",
+      ],
+    },
+    {
+      sectionName: "Parents",
+      values: [
+        "Parent Resources",
+        "Parent Support",
+        "Feedback",
+        "Frequently Asked Questions",
+      ],
+    },
+    {
       sectionName: "Company",
       values: [
         "About Us",
-        "Terms",
-        "Privacy Policy",
+        "Mission & Vision",
+        "Team",
+        "Corporate Responsibility",
       ],
     },
     {
-      sectionName: "Support",
+      sectionName: "Resource Center",
       values: [
-        "Careers",
-        "For Partners",
-        "Contact Us",
+        "Blog",
+        "Guides & Tutorials",
+        "Webinars",
+        "E-books",
       ],
-    },
-    {
-      sectionName: "Our Address",
-      values: ["Name : Dummy", "Contact : 9098000000 ", "Email: dummy.com", "Address : dummy"],
     },
   ];
 
@@ -79,7 +104,7 @@ function FooterSection() {
       </div>
       <div className="lastSection">
         <span className="leftLastText">
-          © 2024 Fincity property, All Rights Reserved
+          © 2024 Integrated, All Rights Reserved
         </span>
       </div>
     </div>

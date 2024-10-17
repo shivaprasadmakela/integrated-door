@@ -1,7 +1,6 @@
 import Carousel from './carousel';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 import "./topCards.css";
-import Iframe from 'react-iframe'
 
 
 interface SvgImage {

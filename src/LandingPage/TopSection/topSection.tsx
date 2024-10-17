@@ -1,15 +1,12 @@
-import TopCards from "./topCards";
-import ContactForm from "./contactForm";
+import AutoPlayCarousel from "./autoPlayCarousel";
 import "./topSection.css";
 
+
 function MainWebsite() {
-
-  
-
   const keyHighlights = [
     {
       title: "15+",
-      description: "New Doors and Accessories",
+      description: "New Doors",
     },
     {
       title: "60+",
@@ -23,6 +20,12 @@ function MainWebsite() {
       title: "100%",
       description: "Assurence Guarantee ",
     },
+  ];
+
+  const images = [
+    "Asserts/Background.svg",
+    "Asserts/hero7.webp",
+    "Asserts/hero8.webp",
   ];
 
   return (
@@ -56,14 +59,22 @@ function MainWebsite() {
           </li>
         </ul>
       </nav>
-      <div className="toptop">
+      <div className="toptop"></div>
 
-      </div>
       <div className="mainTopContainer">
-        <img
+        <AutoPlayCarousel images={images} />
+        {/* <img
           className="topMainImage"
+          alt="mainBackground"
           src={process.env.PUBLIC_URL + "Asserts/Background.svg"}
+        /> */}
+
+        <img
+          className="topMainImageMobile"
+          alt="logo"
+          src={process.env.PUBLIC_URL + "Asserts/mobiletopimage.png"}
         />
+
         <div className="textContainer">
           <h1 className="topHeading">INTEGRATED DOOR</h1>
           <p className="topPara">
@@ -71,21 +82,15 @@ function MainWebsite() {
             security, durability, and design. Aesthetically pleasing entryways .
           </p>
         </div>
-
-        <div className="formSection">
-          <h3 className="requestText">Request a callback</h3>
-          <ContactForm />
-        </div>
       </div>
       <div className="keyHighlights">
         {keyHighlights.map((highlight, index) => (
           <div className="keyHighlight" key={index}>
             <h2 className="keyTitle">{highlight.title}</h2>
             <p className="keyDescription">{highlight.description}</p>
-          </div> 
+          </div>
         ))}
       </div>
-
     </>
   );
 }
