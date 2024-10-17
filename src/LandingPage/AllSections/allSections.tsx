@@ -6,6 +6,8 @@ import TopCards from "../TopSection/topCards";
 import CustomerReview from "../CustomerReviews/customerreviews";
 import FooterSection from "../Footer/footerSection";
 import WhyYouShould from "../WhyYouShould/whyYouShould"
+import ContactFormNew from "../ContactFormNew/contactFormNew";
+
 
 function AllSections() {
   return (
@@ -16,6 +18,7 @@ function AllSections() {
       <WhyYouShould />
       <TopCards />
       <CustomerReview />
+      <ContactFormNew />
       <FooterSection />
     </React.Fragment>
   );

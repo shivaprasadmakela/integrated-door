@@ -57,6 +57,7 @@ function Carroussel(props: CarrousselProps) {
         <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
       </h1>
       <div className="carouselContainer">
+        <img className="ourGalaryBackImage" alt="ourGalaryBackImage" src={process.env.PUBLIC_URL + "Asserts/hero1.webp"} />
       <Carousel
         slides={cards}
         goToSlide={goToSlide !== null ? goToSlide : undefined}
@@ -195,7 +196,7 @@ function OurGallery() {
       <div className="iconAimSection">
       {iconAimSection.map((highlight, index) => (
           <div className="iconAimHighlight" key={index}>
-            <img src={process.env.PUBLIC_URL + highlight.image} className="iconAimImage"/>
+            <img src={process.env.PUBLIC_URL + highlight.image} alt="iconAimImage" className="iconAimImage"/>
             
             <h2 className="iconAimTitle">{highlight.title}</h2>
             <p className="iconAimDescription">{highlight.description}</p>

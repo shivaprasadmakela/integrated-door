@@ -58,3 +58,22 @@
 .mainWhyYouShouldContainer{
     height: 650px;
 }
+
+/* Mobile screens (480px and below) */
+
+@media (max-width: 480px) {
+
+    .detaildCardsContainer {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .mainWhyYouShouldContainer{
+        height: 100%;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { useState, ReactNode } from "react";
 import "./tabSection.css";
-import VideoCarousel from './videoCarousel'
+import VideoCarousel from "./videoCarousel";
+import OurWorktab from "./ourWorkTab";
 
 interface TabProps {
   label: string;
@@ -14,16 +15,23 @@ interface TabButtonsProps {
 }
 
 const TabSection = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  // const [isToggled, setIsToggled] = useState(false);
 
-  const handleToggle = () => {
-    setIsToggled(!isToggled);
-  };
+  // const handleToggle = () => {
+  //   setIsToggled(!isToggled);
+  // };
 
   const videos = [
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
     "https://youtu.be/ZuQuOnYnr3Q?si=3XAPZGrHFz1sAher",
-    "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz"
+    "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
+  ];
+
+  const images = [
+    "Asserts/cutpaste laminate door .webp",
+    "Asserts/teakwood door_edited.webp",
+    "Asserts/prime coated door.webp",
+    "Asserts/Frames.webp",
   ];
 
   const tabs: TabProps[] = [
@@ -42,9 +50,9 @@ const TabSection = () => {
               alt="tabimage2"
               src={process.env.PUBLIC_URL + "/Asserts/google-area-separation-doors-1.jpg"}
             />
-          </div> */} 
+          </div> */}
           <div className="tabImagesContainer">
-          <VideoCarousel videos={videos} />
+            <VideoCarousel videos={videos} />
           </div>
           <div className="tabTextContainer">
             <h1 className="tabMainText">
@@ -58,7 +66,7 @@ const TabSection = () => {
             <p className="tabSubText t">
               Lorem ipsum proin gravida nibh vel velit auctor aliollicitudin,
               lorem quis bibendum auctor nisi elit consequat ipsum, nec
-              sagittis. Morbi accumsan ipsum velit. 
+              sagittis. Morbi accumsan ipsum velit.
             </p>
           </div>
         </div>
@@ -75,8 +83,24 @@ const TabSection = () => {
     {
       label: "OUR WORK",
       children: (
-        <div>
-          <p>Coming Soon</p>
+        <div className="tabThreeMainContainer">
+          <div className="tabThreeTop">
+            <OurWorktab />
+            <div className="imageContainer">
+              {images.map((image, index) => (
+                <img
+                  key={index} // Adding a unique key using index
+                  className="tabThreeImage"
+                  src={process.env.PUBLIC_URL + image}
+                  alt={"Image" +{index}} // Optionally, adding an alt attribute
+                />
+              ))}
+            </div>
+          </div>
+          <div className="tabThreeBottom">
+            
+            <img alt="recimage" src={process.env.PUBLIC_URL + "Asserts/Rectangle 3463592.png"} />
+          </div>
         </div>
       ),
     },
@@ -87,7 +111,6 @@ const TabSection = () => {
   const changeTab = (tab: string) => {
     setActiveTab(tab);
   };
-
 
   return (
     <div className="tabs">
@@ -104,7 +127,6 @@ const TabSection = () => {
         </div>
       </div>
       <div className="straightLine"></div>
-    
     </div>
   );
 };

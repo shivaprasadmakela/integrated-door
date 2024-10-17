@@ -42,3 +42,27 @@ text-align: left;
 color: #33333333;
 
   }
+
+  .formSection {
+    height: 434px;
+    padding: 30px;
+    position: absolute;
+    left: 60vw;
+    top: 13vw;
+    background-color: #FFFFFFF2;
+    border: 1px solid #12A76B33;
+    border-radius: 10px;
+}
+
+.requestText {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: row;
+}
