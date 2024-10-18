@@ -86,8 +86,9 @@
     height: 0.3px;
     width: 80%;
     background-color: #F1F2F4;
-    margin-left: 10rem;
-    
+    display: grid;
+    align-self: center;
+      
 }
 
 .vertical-text {

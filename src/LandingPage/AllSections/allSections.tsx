@@ -11,7 +11,7 @@ import ContactFormNew from "../ContactFormNew/contactFormNew";
 
 function AllSections() {
   return (
-    <React.Fragment>
+   <div>
       <TopSection />
       <OurGallery />
       <TabSection />
@@ -20,7 +20,7 @@ function AllSections() {
       <CustomerReview />
       <ContactFormNew />
       <FooterSection />
-    </React.Fragment>
+      </div>
   );
 }
 
