@@ -1,14 +1,15 @@
-
 import React, { useState } from "react";
-import './contactFormNew.css';
+import emailjs from "emailjs-com";
+import "./contactFormNew.css";
 
 function ContactFormNew() {
-
   const [formData, setFormData] = useState({
     fullName: "",
     phoneNumber: "",
     email: "",
   });
+
+  const [error, setError] = useState("");
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -19,17 +20,52 @@ function ContactFormNew() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(
-      `Full Name: ${formData.fullName}\nPhone Number: ${formData.phoneNumber}\nEmail: ${formData.email}`
-    );
-  };
 
+    if (!formData.fullName || !formData.phoneNumber || !formData.email) {
+      setError("Please fill in all fields.");
+      return;
+    }
+
+    setError("");
+
+    const serviceID = "service_y0pw6xi";
+    const templateIDOwner = "template_mqnnjzz";
+    const templateIDUser = "template_uagn8sf";
+    const userID = "imfRHb6VLep1kQfe0";
+
+    emailjs
+      .send(serviceID, templateIDOwner, formData, userID)
+      .then((result) => {
+        setFormData({ fullName: "", email: "", phoneNumber: "" });
+      })
+      .catch((error) => {
+        alert("Oops! Something went wrong: " + JSON.stringify(error));
+      });
+
+    emailjs
+      .send(serviceID, templateIDUser, formData, userID)
+      .then((result) => {
+        alert("Your request has been sent successfully!");
+      })
+      .catch((error) => {
+        alert("Oops! User Something went wrong: " + JSON.stringify(error));
+      });
+  };
 
   return (
     <div className="mainFormContainer" id="contactFormNew">
-      <img src={process.env.PUBLIC_URL + "Asserts/designforcontactus.png"} alt="designforcontactus" className="designforcontactus"/>
-      <h1 className="formHeading">REQUEST <br/> <span className="callBackSpan">CALLBACK</span></h1> 
+      <img
+        src={process.env.PUBLIC_URL + "/Asserts/designforcontactus.png"}
+        alt="design for contact us"
+        className="designforcontactus"
+      />
+
+      <h1 className="formHeading">
+        REQUEST <br /> <span className="callBackSpan">CALLBACK</span>
+      </h1>
       <form onSubmit={handleSubmit} className="contact-form">
+        {error && <p className="error-message">{error}</p>}{" "}
+        {/* Show error if any */}
         <div className="form-field">
           <label htmlFor="fullName" className="form-label">
             Full Name
@@ -76,7 +112,8 @@ function ContactFormNew() {
           Submit
         </button>
       </form>
-      </div>
-      )}
+    </div>
+  );
+}
 
-      export default ContactFormNew;
+export default ContactFormNew;

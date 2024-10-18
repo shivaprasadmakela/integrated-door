@@ -26,7 +26,7 @@
   height: 100px;
   margin-top: -20px;
   position: relative;
-  top:50px;
+  top: 50px;
 }
 
 .eachreview {
@@ -67,10 +67,10 @@
   color: #7b7b7b;
 }
 
-.customerReviewMain{
+.customerReviewMain {
   padding-top: 40px;
   height: 700px;
- 
+
 }
 
 /* Mobile screens (480px and below) */
@@ -87,9 +87,9 @@
     padding-left: 50px;
   }
 
-  .customerReviewMain{
+  .customerReviewMain {
     padding-top: 40px;
     height: 100%;
-   
+
   }
 }

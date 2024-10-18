@@ -1,179 +1,188 @@
-.mainDivContainer{
-    height: 800px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
+.mainDivContainer {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
-.cardOne{
-    height: 29rem;
-    width: 20.5rem;
-    
-}
 
-.cardThree{
-    height: 25rem;
-    width: 19.5rem;
-    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-    border-radius: 12px;
-    border: 1px solid #F7F8F9;
-    
-    
-    
-}
-.iconContainer{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.icon{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 1000rem;
-    padding-top: 4px;
-    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 3px 3px -1px rgba(8, 11, 14, 0.1);
-    border: 1px solid #F7F8F9;
-    background-color: #ffffff;
-}
-.svg{
-    height: 25px;
-    
-}
-.profileSection{
-    background-color: #FFFFFF;
-    height: 23.5rem;
-    width: 19.5rem;
-    padding-top: 10px;
-    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-    margin-top: 1rem;
-    border-radius: 12px;
-    border: 1px solid #F7F8F9;
-}
-
-.cardTwo{
-    display: flex;
-    flex-direction: column;
-    height: 25rem;
-    width: 19.5rem;
-    align-items: center;
-    
+.cardOne {
+  height: 29rem;
+  width: 20.5rem;
 
 }
-.cardTwoTopContainer{
-    background-color: #FFFFFF;
-    height: 26rem;
-    width: 17rem;
-    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-    border-radius: 12px;
-    border: 1px solid #F7F8F9;
-    padding: 20px 20px 0px 20px;
+
+.cardThree {
+  height: 25rem;
+  width: 19.5rem;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  border-radius: 12px;
+  border: 1px solid #F7F8F9;
+
+
+
 }
 
-.cardTwoBottomContainer{
-    background-color: #FFFFFF;
-    height: 5.5rem;
-    width: 17rem;
-    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-    border-radius: 12px;
-    border: 1px solid #F7F8F9;
-    margin-top: 1rem;
+.iconContainer {
+  display: flex;
+  gap: 15px;
 }
 
-.straightLine{
-    border: 1px solid #F1F2F4;
-    height: 0.3px;
-    width: 80%;
-    background-color: #F1F2F4;
-    display: grid;
-    align-self: center;
-      
+.icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 1000rem;
+  padding-top: 5px;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 3px 3px -1px rgba(8, 11, 14, 0.1);
+  border: 1px solid #F7F8F9;
+  background-color: #ffffff;
+}
+
+.svg {
+  height: 35px;
+
+}
+
+.profileSection {
+  background-color: #FFFFFF;
+  height: 23.5rem;
+  width: 19.5rem;
+  padding-top: 10px;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  margin-top: 1rem;
+  border-radius: 12px;
+  border: 1px solid #F7F8F9;
+}
+
+.cardTwo {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 19.5rem;
+  align-items: center;
+
+
+}
+
+.cardTwoTopContainer {
+  background-color: #FFFFFF;
+  height: 26rem;
+  width: 17rem;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  border-radius: 12px;
+  border: 1px solid #F7F8F9;
+  padding: 20px 20px 0px 20px;
+}
+
+.cardTwoBottomContainer {
+  background-color: #FFFFFF;
+  height: 5.5rem;
+  width: 17rem;
+  box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+  border-radius: 12px;
+  border: 1px solid #F7F8F9;
+  margin-top: 1rem;
+}
+
+.straightLine {
+  border: 1px solid #F1F2F4;
+  height: 0.3px;
+  width: 80%;
+  background-color: #F1F2F4;
+  display: grid;
+  align-self: center;
+
 }
 
 .vertical-text {
-   
-    font-size: 30px;
-    font-weight: 900;
 
-    
-  }
-  
-  .whoText{
-    font-size: 38px;
-    padding-bottom: 30px;
-  }
-  
-  .cardTwoHeader{
-    font-size: 30px;
-    line-height: 40px;
-    padding-bottom:15px;
-  }
-  
-  .cardTwoPara{
-    font-size: 13px;
-    padding-bottom:15px;
-    line-height: 25px;
-  }
-
-  .cardTwoHeader > span{
-    color: #0094ff;
-  }
-  .we{
-    font-size: 20px;
-    
-  }
-  .seeMorePara{
-    
-    margin: 0;
-    padding: 0;
-    color: #0284FE;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 12px;
-    font-weight: 500;
-    display: flex;
-    align-self: end;
-  }
-
-  .cardTwoIframe{
-    height: 5.5rem;
-    width: 17rem;
-    border-radius: 12px;
-    border: 1px solid #F7F8F9;
-  }
+  font-size: 30px;
+  font-weight: 900;
 
 
-  .customerReviewMain{
+}
+
+.whoText {
+  font-size: 38px;
+  padding-bottom: 30px;
+}
+
+.cardTwoHeader {
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
+.cardTwoPara {
+  font-size: 13px;
+  padding-bottom: 15px;
+  line-height: 25px;
+}
+
+.cardTwoHeader>span {
+  color: #0094ff;
+}
+
+.we {
+  font-size: 20px;
+
+}
+
+.seeMorePara {
+
+  margin: 0;
+  padding: 0;
+  color: #0284FE;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-self: end;
+}
+
+.cardTwoIframe {
+  height: 5.5rem;
+  width: 17rem;
+  border-radius: 12px;
+  border: 1px solid #F7F8F9;
+}
+
+
+.customerReviewMain {
   padding-top: 40px;
   height: 700px;
- 
-}/* Mobile screens (480px and below) */
+
+}
+
+/* Mobile screens (480px and below) */
 
 @media (max-width: 480px) {
 
-  .mainDivContainer{
+  .mainDivContainer {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 3rem;
-}
+  }
 
-.vertical-text {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-around;
-  font-size: 20px;
-  font-weight: 900;
+  .vertical-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: 900;
 
-  
-}
 
-.whoText{
-  font-size: 32px;
-  padding-top: 30px;
-  padding-left: 15px;
-}
+  }
+
+  .whoText {
+    font-size: 32px;
+    padding-top: 30px;
+    padding-left: 15px;
+  }
 }

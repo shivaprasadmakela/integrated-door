@@ -2,7 +2,6 @@ import "./whyYouShould.css";
 function WhyYouShould() {
   return (
     <>
-      
       <div className="mainWhyYouShouldContainer">
         <div className="whyYouShouldTextContainer">
           <button className="bltImportant">!mportant</button>

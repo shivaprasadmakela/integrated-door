@@ -45,21 +45,27 @@ function FooterSection() {
     },
     {
       sectionName: "Resource Center",
-      values: [
-        "Blog",
-        "Guides & Tutorials",
-        "Webinars",
-        "E-books",
-      ],
+      values: ["Blog", "Guides & Tutorials", "Webinars", "E-books"],
     },
   ];
 
   return (
     <>
-    <div className="straightLine"></div>
-    <div className="footerMain">
-      
-      <div className="footerMainOne">
+      <div className="footerMain">
+        <div className="footerMainOne">
+          <div className="rightSection">
+            {footerSections.map((section, index) => (
+              <div className="eachSection" key={index}>
+                <span className="sectionheader">{section.sectionName}</span>
+                {section.values.map((value, index) => (
+                  <span className="values" key={index}>
+                    {value}
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="leftSection">
           <img
             className="mainlogo"
@@ -89,25 +95,12 @@ function FooterSection() {
             />
           </div>
         </div>
-        <div className="rightSection">
-          {footerSections.map((section, index) => (
-            <div className="eachSection" key={index}>
-              <span className="sectionheader">{section.sectionName}</span>
-              {section.values.map((value, index) => (
-                <span className="values" key={index}>
-                  {value}
-                </span>
-              ))}
-            </div>
-          ))}
+        <div className="lastSection">
+          <span className="leftLastText">
+            © 2024 Integrated, All Rights Reserved
+          </span>
         </div>
       </div>
-      <div className="lastSection">
-        <span className="leftLastText">
-          © 2024 Integrated, All Rights Reserved
-        </span>
-      </div>
-    </div>
     </>
   );
 }

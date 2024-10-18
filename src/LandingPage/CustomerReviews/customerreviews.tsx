@@ -37,13 +37,17 @@ function CustomerReview() {
   return (
     <div className="customerReviewMain">
       <h1 className="mainTextHeading">
-      Here from our
+        Here from our
         <span className="mainTextHeading mainTextSpan"> customers</span>
       </h1>
       <div className="allReviewsgrid">
         {customerReviews.map((review, index) => (
           <div className="eachreview" key={index}>
-            <img className="customerProfile" alt={"customerProfile" + index} src={process.env.PUBLIC_URL + review.profile}></img>
+            <img
+              className="customerProfile"
+              alt={"customerProfile" + index}
+              src={process.env.PUBLIC_URL + review.profile}
+            ></img>
             <div className="reviewText">
               <p className="customerName">{review.customerName}</p>
               <p className="customerReview">{review.review}</p>

@@ -1,30 +1,34 @@
 import AutoPlayCarousel from "./autoPlayCarousel";
 import "./topSection.css";
-
+import CountUp from "react-countup";
 
 function MainWebsite() {
   const keyHighlights = [
     {
-      title: "15+",
+      title: 15,
+      symbol: "+",
       description: "New Doors",
     },
     {
-      title: "60+",
+      title: 60,
+      symbol: "+",
       description: "Years of Experience",
     },
     {
-      title: "2.1X",
+      title: 5.1,
+      symbol: "x",
       description: "Investment multiple",
     },
     {
-      title: "100%",
+      title: 100,
+      symbol: "%",
       description: "Assurence Guarantee ",
     },
   ];
 
   const images = [
     "Asserts/Background.svg",
-    "Asserts/hero7.webp",
+    "Asserts/hero6.webp",
     "Asserts/hero8.webp",
   ];
 
@@ -63,11 +67,6 @@ function MainWebsite() {
 
       <div className="mainTopContainer">
         <AutoPlayCarousel images={images} />
-        {/* <img
-          className="topMainImage"
-          alt="mainBackground"
-          src={process.env.PUBLIC_URL + "Asserts/Background.svg"}
-        /> */}
 
         <img
           className="topMainImageMobile"
@@ -77,6 +76,7 @@ function MainWebsite() {
 
         <div className="textContainer">
           <h1 className="topHeading">INTEGRATED DOOR</h1>
+
           <p className="topPara">
             Integrated Door offers innovative door systems that combine
             security, durability, and design. Aesthetically pleasing entryways .
@@ -86,7 +86,24 @@ function MainWebsite() {
       <div className="keyHighlights">
         {keyHighlights.map((highlight, index) => (
           <div className="keyHighlight" key={index}>
-            <h2 className="keyTitle">{highlight.title}</h2>
+            {/* <h2 className="keyTitle">{highlight.title}</h2> */}
+
+            <div className="numbersContainer">
+              <CountUp
+                start={0}
+                end={highlight.title}
+                duration={2.75}
+                separator=" "
+              >
+                {({ countUpRef, start }) => (
+                  <div>
+                    <span ref={countUpRef} className="count-up" />
+                  </div>
+                )}
+              </CountUp>
+              <h1 className="count-up"> {highlight.symbol}</h1>
+            </div>
+
             <p className="keyDescription">{highlight.description}</p>
           </div>
         ))}
