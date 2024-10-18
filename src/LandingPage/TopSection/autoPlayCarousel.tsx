@@ -6,7 +6,10 @@ interface CarouselProps {
   autoPlayInterval?: number;
 }
 
-const AutoPlayCarousel: React.FC<CarouselProps> = ({ images, autoPlayInterval = 3000 }) => {
+const AutoPlayCarousel: React.FC<CarouselProps> = ({
+  images,
+  autoPlayInterval = 3000,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -38,7 +41,9 @@ const AutoPlayCarousel: React.FC<CarouselProps> = ({ images, autoPlayInterval = 
       <div className="autoPlayCarousel-images">
         {images.map((image, index) => (
           <div
-            className={`autoPlayCarousel-item ${index === currentIndex ? "active" : ""}`}
+            className={`autoPlayCarousel-item ${
+              index === currentIndex ? "active" : ""
+            }`}
             key={index}
           >
             {index === currentIndex && (

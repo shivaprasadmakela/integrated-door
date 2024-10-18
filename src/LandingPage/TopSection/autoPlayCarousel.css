@@ -1,43 +1,43 @@
 .autoPlayCarousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-    margin: auto;
-  }
-  
-  .autoPlayCarousel-images {
-    position: relative;
-    width: 100%;
-    height: 620px;
-    overflow: hidden;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .autoPlayCarousel-item {
-    position: absolute;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out;
-    opacity: 0;
-  }
-  
-  .autoPlayCarousel-item.active {
-    opacity: 1;
-    border-bottom: none;
-  }
-  
-  .autoPlayCarouselImage {
-    width: 100%;
-  }
-  
-  .autoPlayCarousel-btn {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: #fff;
-    background-color: hsla(0, 0%, 100%, 0.3);
-    border: none;
-    cursor: pointer;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.autoPlayCarousel-images {
+  position: relative;
+  width: 100%;
+  height: 620px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.autoPlayCarousel-item {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.autoPlayCarousel-item.active {
+  opacity: 1;
+  border-bottom: none;
+}
+
+.autoPlayCarouselImage {
+  width: 100%;
+  height: 100%;
+}
+
+.autoPlayCarousel-btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border: none;
+  cursor: pointer;
+}

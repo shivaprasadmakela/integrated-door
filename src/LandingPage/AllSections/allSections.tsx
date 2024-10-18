@@ -13,10 +13,11 @@ function AllSections() {
   return (
    <div>
       <TopSection />
+      <TopCards />
       <OurGallery />
       <TabSection />
       <WhyYouShould />
-      <TopCards />
+
       <CustomerReview />
       <ContactFormNew />
       <FooterSection />

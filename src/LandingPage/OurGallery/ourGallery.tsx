@@ -57,14 +57,18 @@ function Carroussel(props: CarrousselProps) {
         <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
       </h1>
       <div className="carouselContainer">
-        <img className="ourGalaryBackImage" alt="ourGalaryBackImage" src={process.env.PUBLIC_URL + "Asserts/hero1.webp"} />
-      <Carousel
-        slides={cards}
-        goToSlide={goToSlide !== null ? goToSlide : undefined}
-        offsetRadius={offsetRadius}
-        showNavigation={showArrows}
-        animationConfig={config.gentle}
-      />
+        <img
+          className="ourGalaryBackImage"
+          alt="ourGalaryBackImage"
+          src={process.env.PUBLIC_URL + "Asserts/hero1.webp"}
+        />
+        <Carousel
+          slides={cards}
+          goToSlide={goToSlide !== null ? goToSlide : undefined}
+          offsetRadius={offsetRadius}
+          showNavigation={showArrows}
+          animationConfig={config.gentle}
+        />
       </div>
     </div>
   );
@@ -95,9 +99,7 @@ function Card({ imagen, title }: CardProps) {
     >
       <img src={imagen} alt="" />
       <h2>{title}</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-      </p>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
       <div className={Styles.btnn}>
         <Button text="View More" />
       </div>
@@ -111,7 +113,9 @@ function OurGallery() {
       key: uuidv4(),
       content: (
         <Card
-          imagen={process.env.PUBLIC_URL + "Asserts/cutpaste laminate door .webp"}
+          imagen={
+            process.env.PUBLIC_URL + "Asserts/cutpaste laminate door .webp"
+          }
           title="Cut Paste Laminate Doors"
         />
       ),
@@ -158,22 +162,22 @@ function OurGallery() {
 
   const iconAimSection = [
     {
-      image : "Asserts/building-elevator-doors-svgrepo-com.svg",
+      image: "Asserts/building-elevator-doors-svgrepo-com.svg",
       title: "Dummy Door Title",
       description: "We have Doors and Accessories",
     },
     {
-      image : "Asserts/opened-outlined-door-svgrepo-com.svg",
+      image: "Asserts/opened-outlined-door-svgrepo-com.svg",
       title: "Dummy Door Title",
       description: "We have Doors and Accessories",
     },
     {
-      image : "Asserts/open-exit-door-svgrepo-com.svg",
+      image: "Asserts/open-exit-door-svgrepo-com.svg",
       title: "Dummy Door Title",
       description: "We have Doors and Accessories",
     },
     {
-      image : "Asserts/double-door-closed-svgrepo-com.svg",
+      image: "Asserts/double-door-closed-svgrepo-com.svg",
       title: "Dummy Door Title",
       description: "We have Doors and Accessories",
     },
@@ -194,13 +198,17 @@ function OurGallery() {
       </div>
 
       <div className="iconAimSection">
-      {iconAimSection.map((highlight, index) => (
+        {iconAimSection.map((highlight, index) => (
           <div className="iconAimHighlight" key={index}>
-            <img src={process.env.PUBLIC_URL + highlight.image} alt="iconAimImage" className="iconAimImage"/>
-            
+            <img
+              src={process.env.PUBLIC_URL + highlight.image}
+              alt="iconAimImage"
+              className="iconAimImage"
+            />
+
             <h2 className="iconAimTitle">{highlight.title}</h2>
             <p className="iconAimDescription">{highlight.description}</p>
-          </div> 
+          </div>
         ))}
       </div>
       <div className="straightLine"></div>
