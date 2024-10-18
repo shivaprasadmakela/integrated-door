@@ -92,7 +92,8 @@ text-align: left;
 
 .designforcontactus{
     position: absolute;
-    bottom: -340vw;
-    height: 900px;
+    height: 100%;
+    width: 100%;
+    margin-top: 250px;    
     opacity: 0.4;
 }
