@@ -56,9 +56,10 @@
 
 .tabTextContainer {
   width: 50%;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
+  /* /* padding-left: 100px; */
   padding-top: 100px;
   gap: 20px;
   flex-wrap: wrap;

@@ -239,6 +239,7 @@ li {
 
     .topMainImageMobile {
         display: block;
+        width: 100%;
     }
 
     .topMainImage {

@@ -1,4 +1,7 @@
 import "./footerSection.css";
+import { FaCaretRight } from "react-icons/fa";
+import { TbCopyright } from "react-icons/tb";
+
 
 interface footerSections {
   sectionName: string;
@@ -59,7 +62,7 @@ function FooterSection() {
                 <span className="sectionheader">{section.sectionName}</span>
                 {section.values.map((value, index) => (
                   <span className="values" key={index}>
-                    {value}
+                    <FaCaretRight className="FaceCaretRightIcon" style={{ fontSize: 11, marginRight: 5 }} />{value}
                   </span>
                 ))}
               </div>
@@ -97,7 +100,7 @@ function FooterSection() {
         </div>
         <div className="lastSection">
           <span className="leftLastText">
-            © 2024 Integrated, All Rights Reserved
+            <TbCopyright style={{ fontSize: 20, marginRight: 10 }} /> 2024 Integrated, All Rights Reserved
           </span>
         </div>
       </div>

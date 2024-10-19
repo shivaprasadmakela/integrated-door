@@ -69,13 +69,13 @@
 }
 
 .mainFormContainer {
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 400px;
     margin-bottom: 50px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .formHeading {
@@ -97,4 +97,29 @@
     width: 100%;
     margin-top: 250px;
     opacity: 0.4;
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width :480px) {
+    .mainFormContainer {
+        display: flex;
+        flex-direction: column;
+        margin-block-start: 25px;
+    }
+
+    .formHeading {
+        display: none;
+    }
+
+    .MobileformHeading {
+        display: inline !important;
+        width: 100vw;
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-button {
+        border-radius: 7px;
+    }
 }
