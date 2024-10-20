@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./videoCarousel.css"; // Updated CSS file
 
 interface VideoCarouselProps {
-  videos: string[
-  ]; // Expecting an array of video URLs
+  videos: string[]; // Expecting an array of video URLs
 }
 
 const VideoCarousel: React.FC<VideoCarouselProps> = ({ videos }) => {

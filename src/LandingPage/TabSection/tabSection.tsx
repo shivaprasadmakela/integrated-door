@@ -92,14 +92,16 @@ const TabSection = () => {
                   key={index} // Adding a unique key using index
                   className="tabThreeImage"
                   src={process.env.PUBLIC_URL + image}
-                  alt={"Image" +{index}} // Optionally, adding an alt attribute
+                  alt={"Image" + { index }} // Optionally, adding an alt attribute
                 />
               ))}
             </div>
           </div>
           <div className="tabThreeBottom">
-            
-            <img alt="recimage" src={process.env.PUBLIC_URL + "Asserts/Rectangle 3463592.png"} />
+            <img
+              alt="recimage"
+              src={process.env.PUBLIC_URL + "Asserts/Rectangle 3463592.png"}
+            />
           </div>
         </div>
       ),

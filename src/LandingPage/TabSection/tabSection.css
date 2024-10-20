@@ -5,26 +5,27 @@
   padding-top: 100px;
 }
 
-.tabs-container{
+.tabs-container {
   height: 700px;
-  
+
 }
+
 .tab-buttons {
   margin-bottom: 50px;
 }
 
 .tabButton {
-    margin-right: 15px;
-    margin-left: 20px;
-    font-size: 20px;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: rgba(0, 0, 0, .4);
-    transition: all ease-in-out .2s;
-    border-bottom: 2px solid transparent;
+  margin-right: 15px;
+  margin-left: 20px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, .4);
+  transition: all ease-in-out .2s;
+  border-bottom: 2px solid transparent;
 }
 
 .active {
@@ -60,6 +61,7 @@
   padding-left: 100px;
   padding-top: 100px;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .tabImagesContainer {
@@ -78,6 +80,7 @@
   text-align: left;
   color: black;
 }
+
 .tabSubText {
   font-size: 20px;
   font-weight: 400;
@@ -86,6 +89,7 @@
   color: black;
   width: 548.17px;
 }
+
 .tabParagraph {
   font-size: 16px;
   font-weight: 400;
@@ -103,22 +107,23 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  perspective: 1000px; /* Ensures the 3D effect is visible */
+  perspective: 1000px;
+  /* Ensures the 3D effect is visible */
 }
 
-.t{
+.t {
   font-size: 14px;
 }
 
-.tabThreeTop{
+.tabThreeTop {
   width: 50%;
 }
 
-.tabThreeBottom{
-  width:40%;
+.tabThreeBottom {
+  width: 40%;
 }
 
-.tabThreeMainContainer{
+.tabThreeMainContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -127,31 +132,32 @@
 
 .imageContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Two equal columns */
+  grid-template-columns: repeat(4, 1fr);
+  /* Two equal columns */
   justify-items: center;
   align-items: center;
   gap: 0px;
   margin-top: 10px;
 }
 
-.tabThreeImage{
+.tabThreeImage {
   height: 150px;
   width: 170px;
   border-radius: 15px;
 }
 
 
-  .p-carousel-prev-icon{
-    width: 100%;
-    height: 20px;
-  }
-
-.p-carousel-next-icon{
+.p-carousel-prev-icon {
   width: 100%;
   height: 20px;
 }
 
-.smallCarImage{
+.p-carousel-next-icon {
+  width: 100%;
+  height: 20px;
+}
+
+.smallCarImage {
   width: 350px;
   height: 335px;
   border-radius: 15px;
@@ -160,15 +166,43 @@
 /* Mobile screens (480px and below) */
 @media (max-width: 480px) {
 
+  .tabMainText {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44.02px;
+    width: 300px;
+    color: black;
+  }
+
+  .tabSubText {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: black;
+    width: 348.17px;
+  }
+
+  .tabParagraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: black;
+    width: 348.17px;
+  }
+
   .tabContent1 {
     display: flex;
     flex-direction: column;
   }
-  .tabs-container{
+
+  .tabs-container {
     height: 100%;
-    
+
   }
-  .tab-content{
+
+  .tab-content {
     height: 100%;
   }
 
@@ -181,7 +215,7 @@
     gap: 20px;
   }
 
-  .tabImagesContainer{
-  width: 100%;
+  .tabImagesContainer {
+    width: 100%;
   }
 }

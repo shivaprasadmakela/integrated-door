@@ -11,16 +11,17 @@ import ContactFormNew from "../ContactFormNew/contactFormNew";
 
 function AllSections() {
   return (
-    <React.Fragment>
+   <div>
       <TopSection />
+      <TopCards />
       <OurGallery />
       <TabSection />
       <WhyYouShould />
-      <TopCards />
+
       <CustomerReview />
       <ContactFormNew />
       <FooterSection />
-    </React.Fragment>
+      </div>
   );
 }
 
