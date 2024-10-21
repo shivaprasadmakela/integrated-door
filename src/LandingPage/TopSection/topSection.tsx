@@ -38,6 +38,12 @@ function MainWebsite() {
     "Asserts/hero6.webp",
     "Asserts/hero8.webp",
   ];
+const bannerMobileImages = [
+   "Asserts/veneer door.webp",
+   "Asserts/teakwood door_edited.webp",
+   "Asserts/red-door.webp",
+   "Asserts/cutpaste laminate door .webp"
+];
 
   return (
     <>
@@ -73,13 +79,15 @@ function MainWebsite() {
       <div className="toptop" id="home"></div>
 
       <div className="mainTopContainer">
-        <AutoPlayCarousel images={images} />
 
-        <img
-          className="topMainImageMobile"
-          alt="logo"
-          src={process.env.PUBLIC_URL + "Asserts/mobiletopimage.png"}
-        />
+        <div className="topBannerDesktop">
+        <AutoPlayCarousel images={images} />
+        </div>
+
+        <div className="topBannerMobile">
+        <AutoPlayCarousel images={bannerMobileImages} />
+        </div>
+
 
         <div className="textContainer">
           <h1 className="topHeading">INTEGRATED DOOR</h1>
@@ -100,10 +108,11 @@ function MainWebsite() {
                 <CountUp
                   start={0}
                   end={highlight.title}
-                  duration={2.75}
+                  duration={2}
+                  useEasing={true}
                   separator=" "
                 >
-                  {({ countUpRef, start }) => (
+                  {({ countUpRef }) => (
                     <div>
                       <span ref={countUpRef} className="count-up" />
                     </div>

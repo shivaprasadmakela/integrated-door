@@ -4,12 +4,13 @@
   justify-content: center;
   position: relative;
   width: 100%;
+  
   margin: auto;
 }
 
 .autoPlayCarousel-images {
   position: relative;
-  width: 100%;
+  width: 94vw;
   height: 620px;
   overflow: hidden;
   transition: transform 0.5s ease-in-out;
@@ -40,4 +41,22 @@
   background-color: hsla(0, 0%, 100%, 0.3);
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+
+  .autoPlayCarousel-images{
+    height: 500px;
+  }
+  
+  .autoPlayCarouselImage{
+    height: 500px;
+    width: 400px;
+  }
+
+  .autoPlayCarousel{
+    width: 100vw;
+    height: 100%;
+  }
+
 }

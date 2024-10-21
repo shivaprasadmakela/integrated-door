@@ -44,6 +44,8 @@ function Carroussel(props: CarrousselProps) {
   }, [props.offset, props.showArrows]);
 
   return (
+    <>
+    <div className="ourGalleryMain">
     <div
       style={{
         width: props.width,
@@ -71,6 +73,12 @@ function Carroussel(props: CarrousselProps) {
         />
       </div>
     </div>
+    </div>
+
+    <div className="ourGalleryMainMobile">
+      
+    </div>
+    </>
   );
 }
 
