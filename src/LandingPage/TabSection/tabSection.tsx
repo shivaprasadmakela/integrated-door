@@ -26,6 +26,7 @@ const TabSection = () => {
     "https://youtu.be/ZuQuOnYnr3Q?si=3XAPZGrHFz1sAher",
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
   ];
+  
 
   const images = [
     "Asserts/cutpaste laminate door .webp",

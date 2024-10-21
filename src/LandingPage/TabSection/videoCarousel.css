@@ -46,6 +46,20 @@
   cursor: pointer;
 }
 
+
+
+
+
+.left{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 /* Mobile screens (480px and below) */
 @media (max-width: 480px) {
   .videoCarouselVideo {
@@ -53,10 +67,7 @@
     border-radius: 20px;
     margin-left: -33px;
   }
-  .left {
-    margin-left: -30px;
-  }
-}
+  
 
     .videoCarouselVideo {
 
@@ -64,9 +75,7 @@
         border-radius: 20px;
         margin-left: -33px;
     }
-
-    .left {
-        margin-left: -30px;
+    .videoCarousel-videos{
+      left: 20px;
     }
-
-
+  }
