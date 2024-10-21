@@ -263,9 +263,14 @@ li {
     display: block;
   }
 
-  .topMainImage {
-    display: none;
-  }
+    .topMainImageMobile {
+        display: block;
+        width: 100%;
+    }
+
+    .topMainImage {
+        display: none;
+    }
 
   .textContainer {
     position: absolute;

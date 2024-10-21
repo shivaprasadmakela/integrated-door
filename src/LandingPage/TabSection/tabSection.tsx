@@ -128,7 +128,7 @@ const TabSection = () => {
           {tabs.find((tab) => tab.label === activeTab)?.children}
         </div>
       </div>
-      <div className="straightLine"></div>
+      {/* <div className="straightLine"></div> */}
     </div>
   );
 };

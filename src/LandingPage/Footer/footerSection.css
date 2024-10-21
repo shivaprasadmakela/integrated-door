@@ -1,8 +1,7 @@
 .footerMain {
   background-color: #000000;
-
-  border-top-left-radius: 80px;
-  border-top-right-radius: 80px;
+  /* border-top-left-radius: 80px;
+  border-top-right-radius: 80px; */
 }
 
 .footerMainOne {
@@ -10,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 80px 0px 80px;
+
 }
 
 .rightSection {
@@ -23,7 +23,6 @@
 .eachSection {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   gap: 30px;
 }
@@ -36,16 +35,15 @@
   color: #ffffff;
 }
 
-.sectionheader:hover {
-  border: #FFFFFF 1px solid;
-  background-color: #FFFFFF;
-}
-
 .values {
   font-size: 14px;
   font-weight: 500;
   line-height: 14px;
   color: #ffffff;
+}
+
+.FaceCaretRightIcon {
+  display: none;
 }
 
 .leftSection {
@@ -57,7 +55,7 @@
   height: 200px;
 }
 
-.lefth1 {
+/* .lefth1 {
 
   font-size: 24px;
   font-weight: 700;
@@ -79,11 +77,10 @@
   color: #ffffff;
   width: 318px;
   padding-bottom: 30px;
-}
+} */
 
 
 .lastSection {
-  border-top: 1px solid #ffffff;
   width: 100%;
   height: 57px;
   position: relative;
@@ -137,6 +134,7 @@
   .footerMain {
     height: auto;
     padding-top: 80px;
+    background-color: #FFFFFF;
   }
 
   .footerMainOne {
@@ -144,6 +142,8 @@
     align-items: center;
     justify-content: center;
     gap: 50px;
+    height: 100%;
+    /* padding: 0px 50px 0px 80px; */
   }
 
   .rightSection {
@@ -170,41 +170,75 @@
 /* Mobile screens (480px and below) */
 @media (max-width: 480px) {
   .footerMain {
+    width: 100vw;
     height: auto;
     padding-top: 50px;
+    background-color: #FFFFFF;
   }
 
   .footerMainOne {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0px 50px 0px 50px !important;
   }
 
   .leftSection {
-    align-items: center;
-    gap: 20px;
+    gap: 0vw;
+    height: 100%;
+    width: 100vw;
+    margin-block-start: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding-inline: 4.5vw; */
+  }
+
+  .rightLastGrid {
+    gap: 10px;
   }
 
   .rightSection {
     width: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 20px;
   }
 
   .eachSection {
     gap: 10px;
+    display: flex;
+    align-items: start;
+    width: 60vw;
   }
 
   .sectionheader {
     font-size: 20px;
     text-align: center;
+    color: rgb(66, 84, 102);
+    font-weight: 500;
   }
 
   .values {
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
+    color: rgb(66, 84, 102);
+    font-weight: normal;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    line-height: 30.6px;
+    cursor: pointer;
+  }
+
+  .values:hover {
+    color: #0094FF;
+    font-weight: 500;
+  }
+
+  .FaceCaretRightIcon {
+    display: inline;
   }
 
   .smlogo {
@@ -217,13 +251,19 @@
   }
 
   .lastSection {
+    width: 100%;
     padding-left: 20px;
     padding-right: 20px;
-    top: 100px;
   }
 
   .leftLastText {
-    font-size: 12px;
-    text-align: center;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    color: rgb(66, 84, 102);
+    font-family: "SF Pro Text", "Segoe UI", "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
   }
 }

@@ -63,6 +63,9 @@ function ContactFormNew() {
       <h1 className="formHeading">
         REQUEST <br /> <span className="callBackSpan">CALLBACK</span>
       </h1>
+      <h1 className="MobileformHeading" style={{ display: "none" }} >
+        REQUEST  <span className="callBackSpan">CALLBACK</span>
+      </h1>
       <form onSubmit={handleSubmit} className="contact-form">
         {error && <p className="error-message">{error}</p>}{" "}
         {/* Show error if any */}
@@ -78,6 +81,7 @@ function ContactFormNew() {
             value={formData.fullName}
             onChange={handleChange}
             className="form-input"
+            required
           />
         </div>
         <div className="form-field">
@@ -92,6 +96,7 @@ function ContactFormNew() {
             value={formData.phoneNumber}
             onChange={handleChange}
             className="form-input"
+            required
           />
         </div>
         <div className="form-field">
@@ -106,6 +111,7 @@ function ContactFormNew() {
             value={formData.email}
             onChange={handleChange}
             className="form-input"
+            required
           />
         </div>
         <button type="submit" className="form-button">
