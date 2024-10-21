@@ -1,14 +1,9 @@
 import AutoPlayCarousel from "./autoPlayCarousel";
-import { useState, useEffect } from "react";
 import "./topSection.css";
-import CountUp from "react-countup";
+import AnimatedValue from "./animatedValueNum";
 
 function MainWebsite() {
-  const [isClient, setIsClient] = useState(false);
 
-  useEffect(() => {
-    setIsClient(true); // Indicating that rendering is happening on the client
-  }, []);
 
   const keyHighlights = [
     {
@@ -101,24 +96,9 @@ const bannerMobileImages = [
       <div className="keyHighlights">
         {keyHighlights.map((highlight, index) => (
           <div className="keyHighlight" key={index}>
-            {/* <h2 className="keyTitle">{highlight.title}</h2> */}
-
+            
             <div className="numbersContainer">
-              {isClient && (
-                <CountUp
-                  start={0}
-                  end={highlight.title}
-                  duration={2}
-                  useEasing={true}
-                  separator=" "
-                >
-                  {({ countUpRef }) => (
-                    <div>
-                      <span ref={countUpRef} className="count-up" />
-                    </div>
-                  )}
-                </CountUp>
-              )}
+            <AnimatedValue start={0} end={highlight.title} duration={2000} />
               <h1 className="count-up"> {highlight.symbol}</h1>
             </div>
 

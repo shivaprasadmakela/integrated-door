@@ -15,11 +15,7 @@ interface TabButtonsProps {
 }
 
 const TabSection = () => {
-  // const [isToggled, setIsToggled] = useState(false);
-
-  // const handleToggle = () => {
-  //   setIsToggled(!isToggled);
-  // };
+  
 
   const videos = [
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
@@ -40,18 +36,6 @@ const TabSection = () => {
       label: "PHASE ONE DELIVERED",
       children: (
         <div className="tabContent1">
-          {/* <div className="tabImagesContainer" onClick={handleToggle}>
-            <img
-              className={`tabImage ${isToggled ? "tabImageActive" : ""}`}
-              alt="tabimage1"
-              src={process.env.PUBLIC_URL + "/Asserts/syntegra-integrated-door.jpg"}
-            />
-            <img
-              className={`tabImage2 ${isToggled ? "tabImage2Active" : ""}`}
-              alt="tabimage2"
-              src={process.env.PUBLIC_URL + "/Asserts/google-area-separation-doors-1.jpg"}
-            />
-          </div> */}
           <div className="tabImagesContainer">
             <VideoCarousel videos={videos} />
           </div>

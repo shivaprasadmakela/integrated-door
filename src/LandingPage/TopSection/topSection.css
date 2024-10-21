@@ -185,7 +185,7 @@ li {
   align-items: center;
   height: 200px;
   width: 100%;
-  padding: 0px 150px 0px 150px;
+  padding: 0px 120px 0px 120px;
 }
 
 .keyTitle {
@@ -207,11 +207,7 @@ li {
     align-items: center;
     gap: 15px;
     width: 259px;
-    height: 80px;
-
-
-  width: 229px;
-  height: 80px;
+    height: 85px;
 
   border-radius: 100px 100px 100px 100px;
   background-color: #f8ecc7;
