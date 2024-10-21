@@ -68,13 +68,23 @@
   }
 
   .iconAimHighlight {
-
+    width: 70vw;
     text-align: center;
     display: grid;
-    gap: 25px;
+    gap: 0px;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
     padding-bottom: 25px;
+    margin-block: 8px;
   }
 
+  .iconAimTitle {
+    font-size: large;
+    margin-top: 20px;
+    color: rgb(0, 148, 255);
+  }
+
+  .iconAimDescription {
+    font-size: medium;
+  }
 }
