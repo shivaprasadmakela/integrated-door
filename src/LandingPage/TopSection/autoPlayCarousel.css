@@ -45,13 +45,15 @@
 
 @media (max-width: 480px) {
 
+
+
   .autoPlayCarousel-images{
-    height: 500px;
+    height: 550px;
   }
   
   .autoPlayCarouselImage{
-    height: 500px;
-    width: 400px;
+    height: 800px;
+    width: 800px;
   }
 
   .autoPlayCarousel{
