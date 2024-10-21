@@ -46,7 +46,6 @@ li {
 .navLinks {
   display: flex;
   flex-direction: row;
-  gap: 35px;
   list-style: none;
 }
 
@@ -65,12 +64,12 @@ li {
 }
 
 .links {
-  font-size: 16px;
+  font-size: 14px;
+  color: black;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 1.5px;
   text-align: center;
-  color: #25b0ce;
   text-decoration: none;
   background: transparent;
   padding: 10px 20px;
@@ -78,17 +77,11 @@ li {
   transition: all 0.4s ease-in-out;
 }
 
-.links:hover {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
-  text-shadow: 0px 4px 10px rgba(37, 176, 206, 0.7);
-  letter-spacing: 2px;
-  background: linear-gradient(90deg, #25b0ce, #ffffff);
-  background-size: 200% 100%;
-  background-position: 100% 0;
-  transition: all 0.4s ease-in-out;
-  background-position: 0 0;
+.links:hover{
+    color: #505256;
+}
+.links:active{
+    color: #505256;
 }
 
 .linksButton {
@@ -125,11 +118,7 @@ li {
   text-align: center;
   margin-bottom: 1.5rem;
   color: transparent;
-  background: linear-gradient(90deg, #ff6347, #25b0ce, #ffd700);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  animation: gradientMove 4s linear infinite;
+  color: #ffffff;
 }
 
 @keyframes gradientMove {
@@ -285,7 +274,7 @@ li {
     left: 4vw;
   }
 
-  .topHeading {
+  /* .topHeading {
     width: 100%;
     font-size: 48px;
     font-weight: 700;
@@ -294,12 +283,13 @@ li {
     text-align: center;
     margin-bottom: 1.5rem;
     color: transparent;
-    background: linear-gradient(90deg, #ff6347, #25b0ce, #ffd700);
+    background-color: #ffffff;
+
     background-size: 200%;
     -webkit-background-clip: text;
     background-clip: text;
     animation: gradientMove 4s linear infinite;
-  }
+  } */
 
   @keyframes gradientMove {
     0% {

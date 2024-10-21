@@ -58,7 +58,7 @@ const IconImages = [
 function TopCards() {
   return (
     <>
-      <div className="aa">
+      <div className="aa" >
         <div className="mainDivContainer">
           <div className="vertical-text">
             <h1 className="whoText">WHO</h1>

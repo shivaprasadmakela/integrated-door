@@ -53,7 +53,7 @@ function ContactFormNew() {
   };
 
   return (
-    <div className="mainFormContainer" id="contactFormNew">
+    <div className="mainFormContainer" >
       <img
         src={process.env.PUBLIC_URL + "/Asserts/designforcontactus.png"}
         alt="design for contact us"

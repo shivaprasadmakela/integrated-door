@@ -115,7 +115,7 @@ const TabSection = () => {
   };
 
   return (
-    <div className="tabs">
+    <div className="tabs" >
       <div className="tabs-container">
         {/* Tab Buttons */}
         <TabButtons

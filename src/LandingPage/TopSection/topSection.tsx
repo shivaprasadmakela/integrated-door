@@ -1,8 +1,15 @@
 import AutoPlayCarousel from "./autoPlayCarousel";
+import { useState, useEffect } from "react";
 import "./topSection.css";
 import CountUp from "react-countup";
 
 function MainWebsite() {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Indicating that rendering is happening on the client
+  }, []);
+
   const keyHighlights = [
     {
       title: 15,
@@ -42,28 +49,28 @@ function MainWebsite() {
         />
         <ul className="navLinks">
           <li>
-            <a href="#Home" className="links">
+            <a href="#home" className="links">
               Home
             </a>
           </li>
           <li>
-            <a href="#AboutUs" className="links">
+            <a href="#aboutUs" className="links">
               About Us
             </a>
           </li>
           <li>
-            <a href="#Services" className="links">
+            <a href="#services" className="links">
               Services
             </a>
           </li>
           <li>
-            <a href="#ContactUs" className="links">
+            <a href="#contactFormNew" className="links">
               Contact Us
             </a>
           </li>
         </ul>
       </nav>
-      <div className="toptop"></div>
+      <div className="toptop" id="home"></div>
 
       <div className="mainTopContainer">
         <AutoPlayCarousel images={images} />
@@ -89,24 +96,27 @@ function MainWebsite() {
             {/* <h2 className="keyTitle">{highlight.title}</h2> */}
 
             <div className="numbersContainer">
-              <CountUp
-                start={0}
-                end={highlight.title}
-                duration={2.75}
-                separator=" "
-              >
-                {({ countUpRef, start }) => (
-                  <div>
-                    <span ref={countUpRef} className="count-up" />
-                  </div>
-                )}
-              </CountUp>
+              {isClient && (
+                <CountUp
+                  start={0}
+                  end={highlight.title}
+                  duration={2.75}
+                  separator=" "
+                >
+                  {({ countUpRef, start }) => (
+                    <div>
+                      <span ref={countUpRef} className="count-up" />
+                    </div>
+                  )}
+                </CountUp>
+              )}
               <h1 className="count-up"> {highlight.symbol}</h1>
             </div>
 
             <p className="keyDescription">{highlight.description}</p>
           </div>
         ))}
+        <div id="aboutUs"></div>
       </div>
     </>
   );
