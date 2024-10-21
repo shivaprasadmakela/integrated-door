@@ -212,6 +212,7 @@ function OurGallery() {
         ))}
       </div>
       <div className="straightLine"></div>
+      <div id="services"></div>
     </div>
   );
 }
