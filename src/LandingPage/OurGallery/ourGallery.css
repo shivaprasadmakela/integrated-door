@@ -1,5 +1,6 @@
 .btn {
-  background-color: #0094ff;
+  /* background-color: #0094ff; */
+  background-color: #0094FF;
   color: #fff;
   border: none;
   outline: none;
@@ -32,6 +33,7 @@
   height: 600px;
   width: 100%;
   padding: 0px 150px 0px 150px;
+  gap: 20px;
 }
 
 .carouselContainer {
@@ -87,4 +89,105 @@
   .iconAimDescription {
     font-size: medium;
   }
+}
+/* ------------------------------------------------------------- */
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #fff;
+  border-radius: 20px;
+  /*box-shadow: 0px 5px 5px #313131;*/
+  overflow: hidden;
+}
+
+.top-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 65%;
+  transition: height 0.3s ease;
+  background-color: #fff;
+}
+
+.bottom-card {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 35%;
+  transition: height 0.3s ease;
+  background-color: #0a3cff;
+}
+
+.bottom-card::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: 89px;
+  height: 50px;
+  width: 175px;
+  transition: bottom 0.3s ease;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0 30px 0 0 #0a3cff;
+}
+
+.card-content {
+  padding-top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -5px;
+  z-index: 10;
+}
+
+.card-txt {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card-btn {
+  font-size: 13px;
+  margin-top: 15%;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border: solid 2px #fff;
+  border-radius: 15px;
+  padding: 5%;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 2px #0a3bffa1;
+  border: solid 1px #0a3cff;
+}
+
+.card:hover .top-card {
+  height: 35%;
+  transition: height 0.3s ease;
+}
+
+.card:hover .bottom-card {
+  height: 65%;
+  transition: height 0.3s ease;
+}
+
+.card:hover .bottom-card::before {
+  bottom: 164px;
+  transition: bottom 0.3s ease;
+}
+
+.card-btn:hover {
+  color: black;
+  background-color: #fff;
+  transition: background-color 0.4s ease;
 }

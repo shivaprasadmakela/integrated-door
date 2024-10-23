@@ -1,3 +1,4 @@
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
@@ -199,20 +200,38 @@ function OurGallery() {
 
       <div className="iconAimSection">
         {iconAimSection.map((highlight, index) => (
-          <div className="iconAimHighlight" key={index}>
-            <img
-              src={process.env.PUBLIC_URL + highlight.image}
-              alt="iconAimImage"
-              className="iconAimImage"
-            />
+          // <div className="iconAimHighlight" key={index}>
+          //   <img
+          //     src={process.env.PUBLIC_URL + highlight.image}
+          //     alt="iconAimImage"
+          //     className="iconAimImage"
+          //   />
 
-            <h2 className="iconAimTitle">{highlight.title}</h2>
-            <p className="iconAimDescription">{highlight.description}</p>
+          //   <h2 className="iconAimTitle">{highlight.title}</h2>
+          //   <p className="iconAimDescription">{highlight.description}</p>
+          // </div>
+          <div className="card" key={index} >
+            <div className="top-card">
+              <img
+                src={process.env.PUBLIC_URL + highlight.image}
+                alt="iconAimImage"
+                className="iconAimImage"
+              />
+            </div>
+            <div className="bottom-card">
+              <div className="card-content">
+                <span className="card-title">{highlight.title}</span>
+                <p className="card-txt">{highlight.description}</p>
+                <a href="#" className="card-btn">
+                  Read More
+                </a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
       <div className="straightLine"></div>
-    </div>
+    </div >
   );
 }
 

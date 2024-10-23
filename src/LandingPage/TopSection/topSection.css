@@ -99,7 +99,7 @@ li {
 
 .textContainer {
     position: absolute;
-    left: 29vw;
+    /* left: 29vw; */
     top: 16vw;
     height: 20vw;
 
@@ -123,6 +123,7 @@ li {
     color: #FFFFFF;
     margin-bottom: 2.3rem;
     line-height: 30px;
+    margin: auto;
 }
 
 .topbtn1 {
