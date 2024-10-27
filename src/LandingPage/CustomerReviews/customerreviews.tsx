@@ -55,6 +55,7 @@ function CustomerReview() {
           </div>
         ))}
       </div>
+      <div id="contactFormNew"></div>
     </div>
   );
 }

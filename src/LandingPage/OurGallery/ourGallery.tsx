@@ -45,33 +45,41 @@ function Carroussel(props: CarrousselProps) {
   }, [props.offset, props.showArrows]);
 
   return (
-    <div
-      style={{
-        width: props.width,
-        height: props.height,
-        overflow: props.overflow,
-        margin: props.margin,
-      }}
-    >
-      <h1 className="mainTextHeading">
-        WHAT ARE YOU
-        <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
-      </h1>
-      <div className="carouselContainer">
-        <img
-          className="ourGalaryBackImage"
-          alt="ourGalaryBackImage"
-          src={process.env.PUBLIC_URL + "Asserts/hero1.webp"}
-        />
-        <Carousel
-          slides={cards}
-          goToSlide={goToSlide !== null ? goToSlide : undefined}
-          offsetRadius={offsetRadius}
-          showNavigation={showArrows}
-          animationConfig={config.gentle}
-        />
+    <>
+      <div className="ourGalleryMain">
+        <div
+          style={{
+            width: props.width,
+            height: props.height,
+            overflow: props.overflow,
+            margin: props.margin,
+          }}
+        >
+          <h1 className="mainTextHeading">
+            WHAT ARE YOU
+            <span className="mainTextHeading mainTextSpan"> LOOKING FOR??</span>
+          </h1>
+          <div className="carouselContainer">
+            <img
+              className="ourGalaryBackImage"
+              alt="ourGalaryBackImage"
+              src={process.env.PUBLIC_URL + "Asserts/hero1.webp"}
+            />
+            <Carousel
+              slides={cards}
+              goToSlide={goToSlide !== null ? goToSlide : undefined}
+              offsetRadius={offsetRadius}
+              showNavigation={showArrows}
+              animationConfig={config.gentle}
+            />
+          </div>
+        </div>
       </div>
-    </div>
+
+      <div className="ourGalleryMainMobile">
+
+      </div>
+    </>
   );
 }
 
@@ -231,7 +239,7 @@ function OurGallery() {
         ))}
       </div>
       <div className="straightLine"></div>
-    </div >
+    </div>
   );
 }
 

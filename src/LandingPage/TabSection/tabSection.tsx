@@ -15,17 +15,14 @@ interface TabButtonsProps {
 }
 
 const TabSection = () => {
-  // const [isToggled, setIsToggled] = useState(false);
-
-  // const handleToggle = () => {
-  //   setIsToggled(!isToggled);
-  // };
+  
 
   const videos = [
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
     "https://youtu.be/ZuQuOnYnr3Q?si=3XAPZGrHFz1sAher",
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
   ];
+  
 
   const images = [
     "Asserts/cutpaste laminate door .webp",
@@ -39,18 +36,6 @@ const TabSection = () => {
       label: "PHASE ONE DELIVERED",
       children: (
         <div className="tabContent1">
-          {/* <div className="tabImagesContainer" onClick={handleToggle}>
-            <img
-              className={`tabImage ${isToggled ? "tabImageActive" : ""}`}
-              alt="tabimage1"
-              src={process.env.PUBLIC_URL + "/Asserts/syntegra-integrated-door.jpg"}
-            />
-            <img
-              className={`tabImage2 ${isToggled ? "tabImage2Active" : ""}`}
-              alt="tabimage2"
-              src={process.env.PUBLIC_URL + "/Asserts/google-area-separation-doors-1.jpg"}
-            />
-          </div> */}
           <div className="tabImagesContainer">
             <VideoCarousel videos={videos} />
           </div>
@@ -115,7 +100,7 @@ const TabSection = () => {
   };
 
   return (
-    <div className="tabs">
+    <div className="tabs" >
       <div className="tabs-container">
         {/* Tab Buttons */}
         <TabButtons
