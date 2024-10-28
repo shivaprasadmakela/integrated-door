@@ -43,7 +43,7 @@ const TeamMember = () => {
                             <h2 style={{ textAlign: 'center' }} >{item.name}</h2>
                             <p style={{ textAlign: 'center' }} >{item.role}</p>
                         </div>
-                        <div className="iconContainer">
+                        <div className="iconContainerProfile">
                             <a className="socialContainer containerOne">
                                 <TbBrandInstagram className="socialSvg instagramSvg" />
                             </a>

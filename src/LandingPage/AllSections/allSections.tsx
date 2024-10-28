@@ -14,8 +14,8 @@ function AllSections() {
   return (
     <div>
       <TopSection />
-      <TopCards />
       <TeamMember />
+      <TopCards />
       <OurGallery />
       <TabSection />
       <WhyYouShould />
