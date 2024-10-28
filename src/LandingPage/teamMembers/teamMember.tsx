@@ -31,7 +31,7 @@ const cardData = [
 
 const TeamMember = () => {
     return (
-        <div className="cardContainer" >
+        <div className="cardContainer">
             {cardData.map((item, index) => (
                 <div className="body" key={index} >
                     <a className="card human-resources" href="#">
