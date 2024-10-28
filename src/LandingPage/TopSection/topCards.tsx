@@ -51,7 +51,7 @@ function TopCards() {
               <Carousel images={profileImage} />
               <h1 className="mainTextHeading">
                 Our
-                <span className="mainTextHeading mainTextSpan"> Team</span>
+                <span className="mainTextHeading mainTextSpan"> Services</span>
               </h1>
             </div>
           </div>
