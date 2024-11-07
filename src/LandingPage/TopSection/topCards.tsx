@@ -84,7 +84,7 @@ function TopCards() {
           </div>
         </div>
 
-        <div className="straightLine"></div>
+        {/* <div className="straightLine"></div> */}
       </div>
     </>
   );

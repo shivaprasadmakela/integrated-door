@@ -1,6 +1,44 @@
 import AutoPlayCarousel from "./autoPlayCarousel";
 import "./topSection.css";
 import AnimatedValue from "./animatedValueNum";
+import { Link } from 'react-router-dom'
+
+
+export function NavBar() {
+  return (
+    <nav className="navBar">
+      <img
+        className="mainlogoCompant"
+        alt="logo"
+        src={process.env.PUBLIC_URL + "Asserts/svgLogo.svg"}
+      />
+      <ul className="navLinks">
+        <li>
+          <Link to="/" className="links" >Home</Link>
+        </li>
+        <li>
+          <a href="#aboutUs" className="links">
+            About Us
+          </a>
+        </li>
+        <li>
+          <Link to="/team" className="links">Team</Link>
+        </li>
+        <li>
+          <a href="#services" className="links">
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#contactFormNew" className="links">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
 
 function MainWebsite() {
 
@@ -42,7 +80,7 @@ function MainWebsite() {
 
   return (
     <>
-      <nav className="navBar">
+      {/* <nav className="navBar">
         <img
           className="mainlogoCompant"
           alt="logo"
@@ -60,6 +98,9 @@ function MainWebsite() {
             </a>
           </li>
           <li>
+            <Link to="/team" className="links" >Team</Link>
+          </li>
+          <li>
             <a href="#services" className="links">
               Services
             </a>
@@ -70,7 +111,8 @@ function MainWebsite() {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
+      <NavBar />
       <div className="toptop" id="home"></div>
 
       <div className="mainTopContainer">

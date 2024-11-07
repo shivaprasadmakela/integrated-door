@@ -9,16 +9,17 @@
     display: grid;
     justify-content: center;
     place-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
-   
-    height: 700px;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    gap: 30px;
+    height: 650px;
+    padding-block: 100px;
 }
 
 .card {
-    width: 320px;
-    height: 321px;
+    width: 580px;
+    height: 240px;
     background: #fff;
+    padding: 20px 50px;
     border-top-right-radius: 10px;
     overflow: hidden;
     display: flex;
@@ -31,6 +32,15 @@
     text-decoration: none;
 }
 
+.cardContent {
+    /* margin-block-start: 30; */
+    z-index: 10;
+    height: "100%";
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
 .card:hover {
     transform: translateY(-5px) scale(1.005) translateZ(0);
     box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
@@ -38,7 +48,7 @@
 }
 
 .card:hover .overlay {
-    transform: scale(6) translateZ(0);
+    transform: scale(10) translateZ(0);
 }
 
 .card:hover .circle {
@@ -63,11 +73,21 @@
 }
 
 .card p {
-    font-size: 17px;
-    color: #4C5656;
-    margin-top: 30px;
+    font-size: 12px;
+    color: #4c5656e6;
+    /* margin-top: 30px; */
     z-index: 10;
+    font-weight: 500;
     transition: color 0.3s ease-out;
+
+}
+
+.cardContent>.discription {
+    margin-top: 20px;
+    font-size: 13px;
+    font-family: inter;
+    color: rgba(128, 128, 128, 0.692) !important;
+    line-height: 17px;
 }
 
 .circle {
@@ -109,7 +129,7 @@
     height: 100px;
     border-radius: 50%;
     background: var(--bg-color);
-    top: 45px;
+    /* top: 45px; */
     z-index: 0;
     transition: transform 0.3s ease-out;
 }
@@ -117,14 +137,15 @@
 /* ---------------------------------------- */
 /* From Uiverse.io by 0800Gonza */
 .iconContainerProfile {
-    width: fit-content;
-    height: fit-content;
-    background-color: transparent;
+    width: 70%;
+    height: 50px;
+    /* background-color: red; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 25px 25px;
     z-index: 10;
+    margin-top: auto;
 }
 
 /* for all social containers*/
