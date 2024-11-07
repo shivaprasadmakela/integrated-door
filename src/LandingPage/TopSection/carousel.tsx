@@ -6,6 +6,7 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ images }) => {
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
@@ -47,9 +48,8 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
       <div className="carousel-images">
         {images.map((image, index) => (
           <div
-            className={`carousel-item ${
-              index === currentIndex ? "active" : ""
-            }`}
+            className={`carousel-item ${index === currentIndex ? "active" : ""
+              }`}
             key={index}
           >
             {index === currentIndex && (

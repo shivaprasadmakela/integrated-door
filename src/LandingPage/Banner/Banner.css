@@ -1,0 +1,23 @@
+.bannerContainer {
+    height: 200px;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
+    border-radius: 12px;
+    border: 1px solid #F7F8F9;
+    padding: 20px;
+    margin-block: 50px;
+}
+
+.paraContent {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: #505256;
+    text-decoration: none;
+    text-align: center;
+}

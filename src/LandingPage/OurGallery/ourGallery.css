@@ -17,6 +17,7 @@
   margin-top: 30px;
 }
 
+
 .mainTextSpan {
   color: #0094ff;
 }
@@ -35,6 +36,7 @@
   padding: 0px 150px 0px 150px;
   gap: 20px;
   margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 .carouselContainer {
@@ -104,9 +106,9 @@
 /* ------------------------------------------------------------- */
 
 
-.card {
+.cardGallery {
   position: relative;
-  width: 190px;
+  width: 220px;
   height: 254px;
   background-color: #fff;
   border-radius: 20px;
@@ -140,13 +142,12 @@
   content: "";
   position: absolute;
   background-color: transparent;
-  bottom: 113px;
+  bottom: 88px;
   height: 70px;
   width: 80%;
   transition: bottom 0.3s ease;
   border-bottom-left-radius: 20px;
   box-shadow: 0 30px 0 0 #0a3cff;
-
 }
 
 .card-content {
@@ -166,12 +167,11 @@
 }
 
 .card-txt {
-  font-size: 14px;
   text-align: center;
   margin-top: 5px !important;
   color: #FFF !important;
-  font-size: medium !important;
-  
+  font-size: 12px !important;
+  line-height: 15px;
 }
 
 .card-btn {
@@ -185,23 +185,24 @@
   padding: 5%;
 }
 
-.card:hover {
+.cardGallery:hover {
   box-shadow: 0px 2px 2px #0a3cff;
   border: solid 1px #0a3cff;
 }
 
-.card:hover .top-card {
-  height: 35%;
+.cardGallery:hover .top-card {
+  height: 55%;
   transition: height 0.3s ease;
+
 }
 
-.card:hover .bottom-card {
+.cardGallery:hover .bottom-card {
   height: 65%;
   transition: height 0.3s ease;
 }
 
-.card:hover .bottom-card::before {
-  bottom: 206px;
+.cardGallery:hover .bottom-card::before {
+  bottom: 112px;
   transition: bottom 0.3s ease;
 }
 
@@ -209,4 +210,10 @@
   color: black;
   background-color: #fff;
   transition: background-color 0.4s ease;
+}
+
+.modelContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
 }

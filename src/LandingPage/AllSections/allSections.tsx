@@ -8,13 +8,15 @@ import FooterSection from "../Footer/footerSection";
 import WhyYouShould from "../WhyYouShould/whyYouShould"
 import ContactFormNew from "../ContactFormNew/contactFormNew";
 import TeamMember from "../teamMembers/teamMember";
+import Banner from "../Banner/Banner";
 
 
 function AllSections() {
   return (
     <div>
       <TopSection />
-      <TeamMember />
+      {/* <TeamMember />*/}
+      <Banner />
       <TopCards />
       <OurGallery />
       <TabSection />

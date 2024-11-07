@@ -1,7 +1,7 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { Modal } from 'antd';
 import { v4 as uuidv4 } from "uuid";
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect } from "react";
 import { config, useSpring, animated } from "react-spring";
 import "./ourGallery.css";
 import Styles from "./card.module.css";
@@ -89,6 +89,20 @@ function Button({ text }: { text: string }) {
 
 function Card({ imagen, title }: CardProps) {
   const [show, setShown] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
 
   const props3 = useSpring({
     opacity: 1,
@@ -110,9 +124,21 @@ function Card({ imagen, title }: CardProps) {
       <h2>{title}</h2>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
       <div className={Styles.btnn}>
-        <Button text="View More" />
+        {/* <Button text="View More" /> */}
+        <button style={{ width: "150px", height: '45px', padding: 10, backgroundColor: "#0284FE", border: "none", color: 'white', borderRadius: 8, fontSize: 15 }} onClick={showModal}> View More </button>
       </div>
-    </animated.div>
+      <Modal width={1000} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+        {/* <ModelBox /> */}
+        {/* title="Basic Modal" */}
+        <div className='modelContainer' >
+          <img src={imagen} style={{ height: 350, borderRadius: 5 }} alt="" />
+          <div>
+            <h2>{title}</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+          </div>
+        </div>
+      </Modal>
+    </animated.div >
   );
 }
 
@@ -197,7 +223,7 @@ function OurGallery() {
       <div>
         <Carroussel
           cards={cards}
-          height="92vh"
+          height="800px"
           width="95vw"
           overflow="hidden"
           margin="0 auto"
@@ -214,11 +240,11 @@ function OurGallery() {
           //     alt="iconAimImage"
           //     className="iconAimImage"
           //   />
-
           //   <h2 className="iconAimTitle">{highlight.title}</h2>
           //   <p className="iconAimDescription">{highlight.description}</p>
           // </div>
-          <div className="card" key={index} >
+
+          <div className="cardGallery" key={index} >
             <div className="top-card">
               <img
                 src={process.env.PUBLIC_URL + highlight.image}
@@ -230,15 +256,15 @@ function OurGallery() {
               <div className="card-content">
                 <span className="card-title">{highlight.title}</span>
                 <p className="card-txt">{highlight.description}</p>
-                <a href="#" className="card-btn">
+                {/* <a href="#" className="card-btn">
                   Read More
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div className="straightLine"></div>
+      {/* <div className="straightLine"></div> */}
     </div>
   );
 }
