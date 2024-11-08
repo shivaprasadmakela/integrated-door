@@ -16,27 +16,28 @@ const images = [
   "Asserts/Frames.webp",
 ];
 
-const IconImages = [
-  "Asserts/heart.gif",
-  "Asserts/eye.gif",
-  "Asserts/student.gif",
-  "Asserts/home.gif",
-  "Asserts/valentines-day.gif",
-];
+// const IconImages = [
+//   "Asserts/heart.gif",
+//   "Asserts/eye.gif",
+//   "Asserts/student.gif",
+//   "Asserts/home.gif",
+//   "Asserts/valentines-day.gif",
+// ];
 
 
 function TopCards() {
   return (
     <>
       <div className="aa" >
+      
         <div className="mainDivContainer">
-          <div className="vertical-text">
+          {/* <div className="vertical-text">
             <h1 className="whoText">WHO</h1>
             <h1 className="whoText">WE</h1>
             <h1 className="whoText">ARE</h1>
-          </div>
+          </div> */}
           <div className="cardOne">
-            <div className="iconContainer">
+            {/* <div className="iconContainer">
               {IconImages.map((image, index) => (
                 <button className="icon" key={index}>
                   <img
@@ -46,7 +47,7 @@ function TopCards() {
                   />
                 </button>
               ))}
-            </div>
+            </div> */}
             <div className="profileSection">
               <Carousel images={profileImage} />
               <h1 className="mainTextHeading">
@@ -78,7 +79,7 @@ function TopCards() {
               </p>
 
               <a href="/see" className="seeMorePara">
-                <p className="seeMorePara">See More</p>
+                <p className="seeMorePara">Learn more about us</p>
               </a>
             </div>
           </div>

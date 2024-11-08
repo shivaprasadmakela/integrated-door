@@ -1,15 +1,15 @@
 .mainDivContainer {
-  height: 600px;
+  height: 500px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-bottom: 20px;
 }
 
 
 .cardOne {
-  height: 29rem;
   width: 20.5rem;
 
 }
@@ -47,11 +47,11 @@
 
 .profileSection {
   background-color: #FFFFFF;
-  height: 23.5rem;
+  height: 25rem;
   width: 19.5rem;
-  padding-top: 10px;
+ 
   box-shadow: 0 0 1px 0 rgba(8, 11, 14, 0.06), 0 16px 16px -1px rgba(8, 11, 14, 0.1);
-  margin-top: 1rem;
+  
   border-radius: 12px;
   border: 1px solid #F7F8F9;
 }
@@ -105,8 +105,8 @@
 }
 
 .whoText {
-  font-size: 38px;
-  padding-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .cardTwoHeader {
