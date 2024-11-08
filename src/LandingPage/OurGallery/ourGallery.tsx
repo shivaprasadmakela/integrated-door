@@ -83,9 +83,6 @@ function Carroussel(props: CarrousselProps) {
   );
 }
 
-function Button({ text }: { text: string }) {
-  return <button className="topbtn1">{text}</button>;
-}
 
 function Card({ imagen, title }: CardProps) {
   const [show, setShown] = useState<boolean>(false);
@@ -125,7 +122,7 @@ function Card({ imagen, title }: CardProps) {
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
       <div className={Styles.btnn}>
         {/* <Button text="View More" /> */}
-        <button style={{ width: "150px", height: '45px', padding: 10, backgroundColor: "#0284FE", border: "none", color: 'white', borderRadius: 8, fontSize: 15 }} onClick={showModal}> View More </button>
+        <button style={{cursor: "pointer", width: "150px", height: '45px', padding: 10, backgroundColor: "#0094ff", border: "none", color: 'white', borderRadius: 8, fontSize: 15 }} onClick={showModal}> View More </button>
       </div>
       <Modal width={1000} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
         {/* <ModelBox /> */}
@@ -220,7 +217,7 @@ function OurGallery() {
 
   return (
     <div>
-      <div>
+      <div className="car">
         <Carroussel
           cards={cards}
           height="800px"
@@ -231,8 +228,15 @@ function OurGallery() {
           showArrows={false}
         />
       </div>
-
+<div className="iconAimSectionMain">
+      <div>
+      <h1 className="mainTextHeading">
+      CENTRIC 
+            <span className="mainTextHeading mainTextSpan">  ACCESSORIES</span>
+          </h1>
+      </div>
       <div className="iconAimSection">
+      
         {iconAimSection.map((highlight, index) => (
           // <div className="iconAimHighlight" key={index}>
           //   <img
@@ -263,6 +267,7 @@ function OurGallery() {
             </div>
           </div>
         ))}
+      </div>
       </div>
       {/* <div className="straightLine"></div> */}
     </div>

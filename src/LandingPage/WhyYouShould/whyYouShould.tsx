@@ -20,7 +20,7 @@ function WhyYouShould() {
           <div className="detaildCardOne"></div>
         </div>
       </div>
-      <div className="straightLine"></div>
+      {/* <div className="straightLine"></div> */}
     </>
   );
 }
