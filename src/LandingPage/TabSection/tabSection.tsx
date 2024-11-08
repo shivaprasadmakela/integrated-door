@@ -15,14 +15,14 @@ interface TabButtonsProps {
 }
 
 const TabSection = () => {
-  
+
 
   const videos = [
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
     "https://youtu.be/ZuQuOnYnr3Q?si=3XAPZGrHFz1sAher",
     "https://youtu.be/qsKoT__cmAw?si=CZSdi7YWKVklFBGz",
   ];
-  
+
 
   const images = [
     "Asserts/cutpaste laminate door .webp",
@@ -57,14 +57,14 @@ const TabSection = () => {
         </div>
       ),
     },
-    {
-      label: "PHOTOS",
-      children: (
-        <div>
-          <p>Coming Soon</p>
-        </div>
-      ),
-    },
+    // {
+    //   label: "PHOTOS",
+    //   children: (
+    //     <div>
+    //       <p>Coming Soon</p>
+    //     </div>
+    //   ),
+    // },
     {
       label: "OUR WORK",
       children: (

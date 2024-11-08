@@ -15,11 +15,9 @@ function AllSections() {
   return (
     <div>
       <TopSection />
-      {/* <TeamMember />*/}
       <Banner />
       <TopCards />
       <OurGallery />
-      <TabSection />
       <WhyYouShould />
       <CustomerReview />
       <ContactFormNew />

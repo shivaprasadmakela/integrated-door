@@ -55,7 +55,6 @@ function TopCards() {
               </h1>
             </div>
           </div>
-
           <div className="cardThree">
             <h1 className="mainTextHeading">
               Our

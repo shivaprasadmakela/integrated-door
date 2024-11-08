@@ -1,0 +1,13 @@
+.GallaryContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-block: 100px;
+}
+
+.GallaryImage {
+    border-radius: 8px;
+
+}
