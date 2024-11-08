@@ -2,22 +2,54 @@ import AutoPlayCarousel from "./autoPlayCarousel";
 import "./topSection.css";
 import AnimatedValue from "./animatedValueNum";
 import { Link } from 'react-router-dom'
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import ScrollToTop from "./scrollToTop";
 
 
 export function NavBar() {
+
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 4520, // Vertical position to scroll to
+      left: 0, // Horizontal position to scroll to
+      behavior: "smooth", // Smooth scrolling effect
+    });
+  };
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === "#aboutUs") {
+      const aboutSection = document.getElementById("aboutUs");
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // if (location.hash === "#contactUs") {
+    //   const aboutSection = document.getElementById("aboutUs");
+    //   if (aboutSection) {
+    //     aboutSection.scrollIntoView({ behavior: "smooth" });
+    //   }
+    // }
+  }, [location]);
+
   return (
     <nav className="navBar">
-      <img
-        className="mainlogoCompant"
-        alt="logo"
-        src={process.env.PUBLIC_URL + "Asserts/svgLogo.svg"}
-      />
+      <Link to="/">
+        <img
+          className="mainlogoCompant"
+          alt="logo"
+          src={process.env.PUBLIC_URL + "Asserts/svgLogo.svg"}
+        />
+      </Link>
       <ul className="navLinks">
         <li>
           <Link to="/" className="links" >Home</Link>
         </li>
         <li>
-          <a href="#aboutUs" className="links">
+          <a href="/#aboutUs" className="links">
             About Us
           </a>
         </li>
@@ -25,14 +57,16 @@ export function NavBar() {
           <Link to="/team" className="links">Team</Link>
         </li>
         <li>
-          <a href="#services" className="links">
-            Services
-          </a>
+          <Link to="/gallary" className="links" >Gallary</Link>
         </li>
         <li>
-          <a href="#contactFormNew" className="links">
+          <Link to="/services" className="links" >Services</Link>
+        </li>
+        <li onClick={handleScroll} >
+          {/* <a href="/#contactUs" className="links">
             Contact Us
-          </a>
+          </a> */}
+          <Link to='/' className="links" >Contact Us</Link>
         </li>
       </ul>
     </nav>
